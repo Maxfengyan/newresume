@@ -5,7 +5,6 @@
     <personcomponent />
   </div>
 </template>
-
 <script>
 import Educomponent from "./Edu.vue";
 import Expcomponent from "./Exp.vue";
@@ -26,5 +25,7 @@ export default {
   box-sizing: border-box;
   width: 50%;
   overflow: hidden;
+  float: left;
+  padding-bottom: 20px;
 }
 </style>

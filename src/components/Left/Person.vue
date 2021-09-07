@@ -1,5 +1,5 @@
 <template>
-  <div class="experience">
+  <div class="person">
     <headertitle icon="person2" name="个人项目" englishName="Person" />
     <tabTitle
       style="margin-top: 10px"
@@ -101,8 +101,8 @@
       icon="project"
       title="video"
       :append="{
-        type: 3,
-        content: '</>源代码',
+        type: 1,
+        content: '略',
         url: 'https://gitee.com/Maxfengyan/electronexcel',
       }"
     />
@@ -120,7 +120,7 @@
       icon="project"
       title="resume"
       :append="{
-        type: 3,
+        type: 0,
         content: '</>源代码',
         url: 'https://gitee.com/Maxfengyan/electronexcel',
       }"
@@ -137,12 +137,18 @@
     <tabTitle
       style="margin-top: 10px"
       icon="more"
-      title="更多项目"
+      title="更多项目参见gitee"
       :append="{
-        type: 3,
-        content: '</>源代码',
-        url: 'https://gitee.com/Maxfengyan/electronexcel',
+        type: 0,
+        content: '</>查看更多',
+        url: 'https://gitee.com/Maxfengyan',
       }"
+    />
+    <contentcomponent
+      icon="about"
+      title="gitee地址："
+      text="https://gitee.com/Maxfengyan"
+      :type="1"
     />
     <div class="line"></div>
     <div class="round"></div>
@@ -186,16 +192,17 @@ export default {
 </script>
 
 <style scoped lang="scss">
-.experience {
+.person {
   margin-top: 30px;
   position: relative;
+  padding-bottom: 5px;
   width: 94%;
 }
 .line {
   width: 3px;
   background: #292929;
   position: absolute;
-  height: calc(100% - 19px);
+  height: calc(100% - 10px);
   top: 19px;
   left: 20px;
   z-index: -1;
@@ -208,5 +215,6 @@ export default {
   margin-left: 14px;
   position: absolute;
   z-index: 1;
+  bottom: -11px;
 }
 </style>

@@ -62,5 +62,7 @@ span:first-letter {
 .content-text {
   font-size: 14px;
   line-height: 1.2;
+  font-weight: bold;
+  color: rgba(0, 0, 0, 0.65);
 }
 </style>

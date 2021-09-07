@@ -1,14 +1,20 @@
-const { resolve } = require("path");
 import { defineConfig } from "vite";
 import vue from "@vitejs/plugin-vue";
 import styleImport from "vite-plugin-style-import";
 import { svgBuilder } from "./src/plugin/icons/svgBuilder";
 // https://vitejs.dev/config/
+
+const path = require("path");
+
+function _resolve(dir) {
+  return path.resolve(__dirname, dir);
+}
+
 export default defineConfig({
   base: "./",
   resolve: {
     alias: {
-      "@": resolve(__dirname, "/src"),
+      "@": _resolve("src"),
     },
   },
   plugins: [
@@ -17,16 +23,9 @@ export default defineConfig({
     styleImport({
       libs: [
         {
-          libraryName: "element-plus",
+          libraryName: "vant",
           esModule: true,
-          ensureStyleFile: true,
-          resolveStyle: (name) => {
-            name = name.slice(3);
-            return `element-plus/packages/theme-chalk/src/${name}.scss`;
-          },
-          resolveComponent: (name) => {
-            return `element-plus/lib/${name}`;
-          },
+          resolveStyle: (name) => `vant/es/${name}/style`,
         },
       ],
     }),

@@ -214,9 +214,9 @@ export const EPGmanage = [
 export const uploadfile = [
   {
     icon: "system",
-    title: "9.原型上传系统: ",
+    title: "9.excel&&zip管理系统: ",
     type: 0,
-    text: " 服务于公司内部上传系统，产品经理通过系统上传原型zip，系统经解压后放于nginx配置下的文件夹中，生成静态资源url便于访问。",
+    text: " 服务于公司内部的上传系统，zip:产品经理通过系统上传原型，生成静态资源url便于访问。excel:上传excel文件程序解析生成html页面便于预览查看",
   },
   {
     icon: "about",

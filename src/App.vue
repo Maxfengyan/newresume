@@ -1,14 +1,17 @@
 <template>
-  <pccomponent />
+  <pccomponent v-if="pc" />
+  <mobilecomponent v-else />
 </template>
 
 <script>
 import { ref } from "vue";
 import Pccomponent from "./components/Pc/index.vue";
+import Mobilecomponent from "./components/Mobile/index.vue";
 export default {
-  components: { Pccomponent },
+  components: { Pccomponent, Mobilecomponent },
   setup() {
-    const dpi = window.screen.width;
+    // const dpi = window.screen.width;
+    const dpi = document.documentElement.clientWidth;
     const pc = ref(true);
     // 判断设备分辨率
     if (dpi <= 1280) {
@@ -37,5 +40,86 @@ a {
 }
 a:hover {
   color: #409eff;
+}
+::-webkit-scrollbar {
+  width: 5px;
+  height: 11px;
+  border: none;
+  background: #ddd !important;
+}
+::-webkit-scrollbar-track-piece {
+  border: none;
+  position: absolute;
+  padding: 0;
+  box-shadow: none;
+  background-color: #ddd;
+  border-radius: 1px;
+}
+::-webkit-scrollbar-thumb:vertical {
+  background-color: #999;
+  border-radius: 0px;
+  border: none;
+}
+::-webkit-scrollbar-thumb:horizontal {
+  background-color: #999;
+  border-radius: 0px;
+  border: none;
+}
+::-webkit-scrollbar {
+  width: 5px;
+  height: 12px;
+}
+::-webkit-scrollbar-button:vertical {
+  display: none;
+}
+::-webkit-scrollbar-track:vertical {
+  background-color: black;
+}
+::-webkit-scrollbar-track-piece {
+  background: #fff;
+}
+::-webkit-scrollbar-thumb:vertical {
+  background-color: #8e8e8e;
+  border-radius: 5px;
+}
+::-webkit-scrollbar-thumb:vertical:hover {
+  background-color: #3b3b3b;
+}
+::-webkit-scrollbar-corner:vertical {
+  background-color: #535353;
+}
+::-webkit-scrollbar-resizer:vertical {
+  background-color: #ff6e00;
+}
+
+.EasterEgg {
+  transform: rotate(45deg);
+  position: fixed;
+  top: 47%;
+  z-index: 1000;
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  background-image: linear-gradient(
+    to right,
+    #9ed110,
+    #50b517,
+    #179067,
+    #476eaf,
+    #9f49ac,
+    #cc42a2,
+    #ff3ba7,
+    #ff5800,
+    #ff8100,
+    #feac00,
+    #ffcc00,
+    #ede604
+  );
+  font-size: 25px;
+  left: 20%;
+  opacity: 0;
+}
+body {
+  background: #d4d4d4;
 }
 </style>
