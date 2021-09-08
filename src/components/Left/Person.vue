@@ -205,7 +205,7 @@ export default {
   height: calc(100% - 10px);
   top: 19px;
   left: 20px;
-  z-index: -1;
+  z-index: 1;
 }
 .round {
   width: 15px;

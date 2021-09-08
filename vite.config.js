@@ -32,5 +32,6 @@ export default defineConfig({
   ],
   server: {
     port: 9900,
+    host: "0.0.0.0",
   },
 });

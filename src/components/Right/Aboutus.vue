@@ -79,7 +79,7 @@ export default {
   height: calc(100% - 12px);
   top: 19px;
   left: 20px;
-  z-index: -1;
+  z-index: 1;
 }
 
 .round {
@@ -93,6 +93,7 @@ export default {
   bottom: -9px;
 }
 .commontext {
+  word-break: break-all;
   font-size: 14px;
   line-height: 1.8 !important;
   // line-height: 1.2;

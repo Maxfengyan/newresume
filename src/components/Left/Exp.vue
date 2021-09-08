@@ -102,7 +102,7 @@
     <tabTitle
       style="margin-top: 10px"
       icon="package"
-      title="沈阳元格信息技术有限公司"
+      title="沈阳元格信息技术"
       :append="{ type: 1, content: '2017-07 ~ 2018-08', url: '' }"
     />
     <titlecomponent name="前端开发" />
@@ -188,7 +188,7 @@ export default {
   height: calc(100% - 19px);
   top: 19px;
   left: 20px;
-  z-index: -1;
+  z-index: 1;
 }
 .round {
   width: 15px;

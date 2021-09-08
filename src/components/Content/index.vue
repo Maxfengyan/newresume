@@ -39,9 +39,10 @@ export default {
 
 <style scoped lang="scss">
 .content {
-  margin-left: 81px;
+  margin-left: 75px;
   margin-top: 15px;
   text-indent: -6%;
+  word-break: break-all;
 
   svg {
     font-size: 22px;

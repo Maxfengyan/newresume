@@ -43,6 +43,10 @@ export default {
   justify-content: center;
   align-items: center;
   float: left;
+  z-index: 10;
+  svg {
+    z-index: 10;
+  }
 }
 .header-title-name {
   font-weight: 700;

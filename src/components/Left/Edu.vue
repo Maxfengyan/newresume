@@ -49,7 +49,7 @@ export default {
   height: calc(100% - 19px);
   top: 19px;
   left: 20px;
-  z-index: -1;
+  z-index: 1;
 }
 .university {
   margin-left: 52px;
