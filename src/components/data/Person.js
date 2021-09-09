@@ -165,7 +165,7 @@ export const resume = [
     icon: "system",
     title: "web端简历:",
     type: 0,
-    text: " 一款网页端个人简历",
+    text: " 此款web端个人简历，具备响应式布局，pc端/移动端兼容以及pdf生成下载功能",
   },
   {
     icon: "about",
@@ -176,13 +176,13 @@ export const resume = [
   {
     icon: "show",
     title: "演示地址: ",
-    type: 3,
+    type: 4,
     text: "",
   },
   {
     icon: "xunzhang",
     title: "收获: ",
     type: 0,
-    text: " 页面布局以及多端响应式",
+    text: " 练习了页面布局以及多端响应式",
   },
 ];

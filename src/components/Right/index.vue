@@ -1,5 +1,5 @@
 <template>
-  <div class="right" ref="right">
+  <div class="right">
     <skillcomponent />
     <languagecompinent />
   </div>
@@ -7,22 +7,10 @@
 <script>
 import Skillcomponent from "./Skill.vue";
 import Languagecompinent from "./Aboutus.vue";
-import { onMounted, ref } from "vue";
 export default {
   components: {
     Skillcomponent,
     Languagecompinent,
-  },
-  setup() {
-    const right = ref();
-    onMounted(() => {
-      if (document.documentElement.clientWidth < 1280) {
-        right.value.style.width = "100%";
-      }
-    });
-    return {
-      right,
-    };
   },
 };
 </script>

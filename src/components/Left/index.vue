@@ -1,5 +1,5 @@
 <template>
-  <div class="left" ref="left">
+  <div class="left">
     <educomponent />
     <expcomponent />
     <personcomponent />
@@ -9,23 +9,11 @@
 import Educomponent from "./Edu.vue";
 import Expcomponent from "./Exp.vue";
 import Personcomponent from "./Person.vue";
-import { ref, onMounted } from "vue";
 export default {
   components: {
     Educomponent,
     Expcomponent,
     Personcomponent,
-  },
-  setup() {
-    const left = ref();
-    onMounted(() => {
-      if (document.documentElement.clientWidth < 1280) {
-        left.value.style.width = "100%";
-      }
-    });
-    return {
-      left,
-    };
   },
 };
 </script>

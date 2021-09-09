@@ -4,19 +4,36 @@
 </template>
 
 <script>
-import { ref } from "vue";
+import { ref, watch, onBeforeMount } from "vue";
+import { useWindowSize } from "@vant/use";
 import Pccomponent from "./components/Pc/index.vue";
 import Mobilecomponent from "./components/Mobile/index.vue";
 export default {
   components: { Pccomponent, Mobilecomponent },
   setup() {
     // const dpi = window.screen.width;
-    const dpi = document.documentElement.clientWidth;
+    // const dpi = document.documentElement.clientWidth;
+    const { width, height } = useWindowSize();
     const pc = ref(true);
-    // 判断设备分辨率
-    if (dpi <= 1280) {
-      pc.value = false;
-    }
+
+    onBeforeMount(() => {
+      activeWidth(width.value);
+    });
+
+    watch([width, height], () => {
+      activeWidth(width.value);
+    });
+
+    const activeWidth = (value) => {
+      if (value < 1140) {
+        document.querySelector(".left").style.width = "100%";
+        document.querySelector(".right").style.width = "100%";
+        pc.value = false;
+      } else {
+        pc.value = true;
+      }
+    };
+
     return { pc };
   },
 };
@@ -34,6 +51,7 @@ export default {
     Hiragino Sans GB, Microsoft YaHei, Helvetica Neue, Helvetica, Arial,
     sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol;
   width: 100%;
+  user-select: none;
 }
 a {
   color: #dedede;

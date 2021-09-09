@@ -8,6 +8,7 @@
   },
   "dependencies": {
     "animate.css": "^3.7.2",
+    "animated-scroll-to": "^2.2.0",
     "normalize.css": "^8.0.1",
     "vant": "^3.2.2",
     "vue": "^3.2.2"

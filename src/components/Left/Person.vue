@@ -145,6 +145,7 @@
       }"
     />
     <contentcomponent
+      style="padding-left: 48px"
       icon="about"
       title="gitee地址："
       text="https://gitee.com/Maxfengyan"
@@ -216,5 +217,8 @@ export default {
   position: absolute;
   z-index: 1;
   bottom: -11px;
+}
+.project {
+  margin-left: 35px;
 }
 </style>

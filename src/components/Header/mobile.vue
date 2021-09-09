@@ -85,3 +85,8 @@ export default {
   }
 }
 </style>
+<style>
+.van-image-preview {
+  z-index: 9999 !important;
+}
+</style>

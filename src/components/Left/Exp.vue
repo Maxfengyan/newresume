@@ -201,5 +201,6 @@ export default {
 }
 .project {
   margin-top: 35px;
+  margin-left: 35px;
 }
 </style>

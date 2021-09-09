@@ -1,0 +1,5 @@
+@media only print {
+  .tab-title-content a {
+    display: none;
+  }
+}
