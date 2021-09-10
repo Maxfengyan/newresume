@@ -1,0 +1,96 @@
+#app {
+  /* font-family: PingFangSC-Regular, Avenir, Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale; */
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, PingFang SC, Hiragino Sans GB, Microsoft YaHei, Helvetica Neue, Helvetica, Arial,
+    sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol;
+  width: 100%;
+  user-select: none;
+}
+a {
+  color: #dedede;
+}
+a:hover {
+  color: #409eff;
+}
+::-webkit-scrollbar {
+  width: 5px;
+  height: 11px;
+  border: none;
+  background: #ddd !important;
+}
+::-webkit-scrollbar-track-piece {
+  border: none;
+  position: absolute;
+  padding: 0;
+  box-shadow: none;
+  background-color: #ddd;
+  border-radius: 1px;
+}
+::-webkit-scrollbar-thumb:vertical {
+  background-color: #999;
+  border-radius: 0px;
+  border: none;
+}
+::-webkit-scrollbar-thumb:horizontal {
+  background-color: #999;
+  border-radius: 0px;
+  border: none;
+}
+::-webkit-scrollbar {
+  width: 5px;
+  height: 12px;
+}
+::-webkit-scrollbar-button:vertical {
+  display: none;
+}
+::-webkit-scrollbar-track:vertical {
+  background-color: black;
+}
+::-webkit-scrollbar-track-piece {
+  background: #fff;
+}
+::-webkit-scrollbar-thumb:vertical {
+  background-color: #8e8e8e;
+  border-radius: 5px;
+}
+::-webkit-scrollbar-thumb:vertical:hover {
+  background-color: #3b3b3b;
+}
+::-webkit-scrollbar-corner:vertical {
+  background-color: #535353;
+}
+::-webkit-scrollbar-resizer:vertical {
+  background-color: #ff6e00;
+}
+
+.EasterEgg {
+  transform: rotate(45deg);
+  position: fixed;
+  top: 47%;
+  z-index: 1000;
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  background-image: linear-gradient(
+    to right,
+    #9ed110,
+    #50b517,
+    #179067,
+    #476eaf,
+    #9f49ac,
+    #cc42a2,
+    #ff3ba7,
+    #ff5800,
+    #ff8100,
+    #feac00,
+    #ffcc00,
+    #ede604
+  );
+  font-size: 25px;
+  left: 20%;
+  opacity: 0;
+}
+body {
+  background: #d4d4d4;
+}

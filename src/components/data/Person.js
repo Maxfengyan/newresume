@@ -48,14 +48,14 @@ export const visualDrag = [
     icon: "xunzhang",
     title: "收获: ",
     type: 0,
-    text: " 此组件是epgms项目编排瀑布流专题的核心组件。并且强化了HTML5 draggable的API学习，以及各种DOM事件的操作。",
+    text: " 依靠此组件开发出epgms项目编排瀑布流专题的核心部分，也强化了HTML5 draggable的API学习，以及各种DOM事件的操作。",
   },
 ];
 
 export const aconsole = [
   {
     icon: "system",
-    title: "机顶盒端调试输出: ",
+    title: "机顶盒端调试输出插件: ",
     type: 0,
     text: " 一个在机顶盒端输出调试信息的js脚本插件",
   },
@@ -165,19 +165,13 @@ export const resume = [
     icon: "system",
     title: "web端简历:",
     type: 0,
-    text: " 此款web端个人简历，具备响应式布局，pc端/移动端兼容以及pdf生成下载功能",
+    text: " 此款web端个人简历，具备响应式布局，pc端/移动端兼容以及pdf自适应下载功能",
   },
   {
     icon: "about",
     title: "技术栈: ",
     type: 0,
     text: " vue3/vite",
-  },
-  {
-    icon: "show",
-    title: "演示地址: ",
-    type: 4,
-    text: "",
   },
   {
     icon: "xunzhang",

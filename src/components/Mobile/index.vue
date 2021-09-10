@@ -2,8 +2,8 @@
   <!-- <van-icon name="arrow" class="rightArrow" /> -->
   <!-- <van-icon name="arrow-left" class="leftArrow" /> -->
   <van-icon name="sort" class="sort" @click="toggle" :style="state.sortStyle" />
-  <van-icon name="down" class="returnTop" @click="returnTop" />
-  <rightcomponent />
+  <van-icon name="back-top" class="returnTop" @click="returnTop" />
+  <rightcomponent style="width: 100% !important" />
   <!-- <img :src="avatar" class="avatar" /> -->
   <van-popup
     v-model:show="state.drawer"
@@ -15,7 +15,7 @@
     <!-- closeable -->
     <!-- round -->
     <headercomponent />
-    <leftcomponent />
+    <leftcomponent style="width: 100% !important" />
   </van-popup>
 </template>
 
@@ -120,11 +120,11 @@ export default {
   right: 10px;
   bottom: 15%;
   z-index: 3003;
-  transform: rotate(180deg);
+  /* transform: rotate(180deg); */
   padding: 10px;
   background: #fff;
   border-radius: 50%;
-  box-shadow: 0 -2px 12px 0 rgba(0, 0, 0, 0.7);
+  box-shadow: 0 2px 12px 0 rgba(0, 0, 0, 0.7);
 }
 .returnTop:active {
   background: #000 !important;

@@ -4,7 +4,7 @@
     <div class="header-name">
       <span>马丰彦</span>
       <svg-icon name="man" />
-      <div>前端工程师/NodeJs后端开发</div>
+      <div>前端开发/NodeJs后端开发</div>
     </div>
     <div class="header-link">
       <svg-icon name="GitHub" @click="enter(1)" />

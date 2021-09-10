@@ -1,9 +1,9 @@
 export const boss = [
   {
     icon: "system",
-    title: "1.IPTV融合运营支撑系统: ",
+    title: "1.IPTV广电运营支撑系统: ",
     type: 0,
-    text: " 服务于江苏/辽宁省台广电的融合用户平台，集IPTV用户管控系统、增值业务系统、账务系统、数据监控多系统于一体的后台管理系统。",
+    text: " 服务于江苏/辽宁省台广电的融合用户平台，集IPTV用户管控系统、增值业务系统、账务系统、数据监控多系统组合的后台管理系统。",
   },
   {
     icon: "about",
@@ -30,7 +30,7 @@ export const epgms = [
     icon: "system",
     title: "2.epg智能管理系统: ",
     type: 0,
-    text: " 服务于江苏/辽宁/浙江省台广电的epg智能系统，具有智能可视化布局EPG页面、静态数据生成审核下发、栏目节目智能编排上下线等功能。",
+    text: " 服务于江苏/辽宁/浙江省台广电的epg智能系统，具有可视化编排布局EPG页面、静态数据生成审核下发、栏目节目智能编排上下线等功能。",
   },
   {
     icon: "about",
@@ -40,7 +40,7 @@ export const epgms = [
   },
   {
     icon: "show",
-    title: "专题制作模块演示地址: ",
+    title: "核心模块演示地址: ",
     type: 1,
     text: " https://maxfengyan.gitee.io/visual-drag/index.html",
   },
@@ -82,7 +82,7 @@ export const epg = [
     icon: "system",
     title: "4.IPTV端epg页面: ",
     type: 0,
-    text: " 对接epg智能管理系统下发的静态数据，在IPTV盒子端呈现的智能瀑布流页面，具备高性能加载、灵活可扩展、功能齐全的瀑布流可视化页面。",
+    text: " 承接epg智能管理系统下发的静态数据后，在IPTV盒子端呈现的智能瀑布流页面，具备高性能加载、灵活可扩展、功能齐全的瀑布流页面。",
   },
   {
     icon: "about",
@@ -189,7 +189,7 @@ export const EPGmanage = [
     icon: "system",
     title: "8.epg入口管理系统: ",
     type: 0,
-    text: " 服务于公司内部的管理系统，管理所有机顶盒入口地址，便于切换访问环境以及调试。",
+    text: " 服务于公司内部的管理系统，管理所有机顶盒入口地址，便于切换访问环境以及功能调试。",
   },
   {
     icon: "about",
@@ -216,13 +216,13 @@ export const uploadfile = [
     icon: "system",
     title: "9.文件管理系统: ",
     type: 0,
-    text: " 服务于公司内部的系统，zip:产品经理通过系统上传原型，生成静态资源url便于访问。excel:上传excel文件后程序解析生成html页面便于预览查看。",
+    text: " 服务于公司内部的系统，1.zip:产品经理通过系统上传原型，生成静态资源url便于访问。2.excel:上传excel文件后程序解析生成html页面便于预览查看。",
   },
   {
     icon: "about",
     title: "技术栈: ",
     type: 0,
-    text: " nodejs/nestJs/adm-zip",
+    text: " nodejs/nestJs/adm-zip/excelJs",
   },
   {
     icon: "show",
@@ -249,7 +249,7 @@ export const superplayer = [
     icon: "about",
     title: "技术栈: ",
     type: 0,
-    text: " Echarts",
+    text: " Echarts/原生js",
   },
   {
     icon: "show",

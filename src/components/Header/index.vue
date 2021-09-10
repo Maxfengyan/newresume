@@ -1,7 +1,11 @@
 <template>
   <div class="header">
     <img :src="avatar" class="header-avatar" @click="showEgg" />
+    <img :src="resume" class="header-resume" />
     <div class="header-link">
+      <span class="webResume">
+        <van-icon name="down" />建议扫描右侧二维码查看完整web端简历</span
+      >
       <span
         ><svg-icon name="GitHub" /><a href="https://github.com/Maxfengyan"
           >https://github.com/Maxfengyan</a
@@ -18,7 +22,7 @@
     <div class="header-name">
       <span>马丰彦</span>
       <svg-icon name="man" />
-      <div>前端工程师/NodeJs后端开发</div>
+      <div>前端开发/NodeJs后端开发</div>
     </div>
   </div>
 </template>
@@ -26,6 +30,7 @@
 <script>
 import { ref } from "vue";
 import avatar from "@/assets/avatar.png";
+import resume from "@/assets/resume.png";
 export default {
   setup() {
     const num = ref(0);
@@ -40,6 +45,7 @@ export default {
       avatar,
       num,
       showEgg,
+      resume,
     };
   },
 };
@@ -50,12 +56,20 @@ export default {
   width: 100%;
   background: #292929;
   height: 180px;
+  overflow: hidden;
 }
 .header-avatar {
   width: 140px;
   margin: 20px;
   border-radius: 5px;
   float: left;
+}
+.header-resume {
+  width: 140px;
+  margin: 20px;
+  border-radius: 5px;
+  float: left;
+  display: none;
 }
 .header-link {
   float: left;
@@ -102,6 +116,13 @@ export default {
   div {
     margin-top: 20px;
     margin-left: -4px;
+  }
+}
+.webResume {
+  display: none;
+  i {
+    transform: rotate(77deg);
+    margin-right: 16px;
   }
 }
 </style>

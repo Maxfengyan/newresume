@@ -1,5 +1,35 @@
 @media only print {
+  body {
+    background-color: #fff !important;
+  }
+  /* 干掉下载链接文字 */
   .tab-title-content a {
     display: none;
+  }
+
+  /* 替换二维码为web简历 */
+  .header-avatar {
+    display: none;
+  }
+  .header-resume {
+    display: block !important;
+  }
+
+  /* 显示提示文字 */
+  .webResume {
+    display: block !important;
+  }
+
+  /* 防止pdf过宽有遮挡 */
+  .page {
+    width: 900px !important;
+    border-right: 1px solid #636161;
+    border-left: 1px solid #636161;
+  }
+
+  /* 隐藏返回顶部和下载按钮 */
+  .returnTop,
+  .download {
+    display: none !important;
   }
 }
