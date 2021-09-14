@@ -14,7 +14,7 @@
       @click="returnTop"
       title="回到顶部"
     />
-    <div class="download" title="下载简历">
+    <div class="download" title="下载简历" @click="download">
       <svg-icon name="download" />
     </div>
   </div>
@@ -33,11 +33,19 @@ export default {
     Rightcomponent,
     Nprogressomponent,
   },
-  setup() {
+  props: {
+    pcValue: {
+      type: Boolean,
+    },
+  },
+  setup(props) {
     const returnTop = () => {
       animateScrollTo(0);
     };
-    return { returnTop };
+    const download = () => {
+      window.location.href = import.meta.env.VITE_SYSTEM_DOWNLOAD;
+    };
+    return { returnTop, download };
   },
 };
 </script>

@@ -1,5 +1,5 @@
 <template>
-  <pccomponent v-if="pc" />
+  <pccomponent v-if="pc" :pc-value="pc" />
   <mobilecomponent v-else />
 </template>
 
@@ -11,18 +11,17 @@ import Mobilecomponent from "./components/Mobile/index.vue";
 export default {
   components: { Pccomponent, Mobilecomponent },
   setup() {
-    /* 自适应架子啊 */
-    const { width, height } = useWindowSize();
+    /* 自适应 */
+    const { width } = useWindowSize();
     const pc = ref(true);
 
-    onMounted(() => {
-      activeWidth(width.value);
-    });
+    // onMounted(() => {
 
-    watch([width, height], () => {
-      activeWidth(width.value);
-    });
+    // });
 
+    watch(width, (value) => {
+      activeWidth(value);
+    });
     const activeWidth = (value) => {
       if (value < 1140) {
         pc.value = false;
@@ -30,7 +29,7 @@ export default {
         pc.value = true;
       }
     };
-
+    activeWidth(width.value);
     return { pc };
   },
 };

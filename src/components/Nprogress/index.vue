@@ -1,29 +1,25 @@
+
 <template></template>
 <script>
-import { watch, onMounted, reactive } from "vue";
-import NProgress from "nprogress"; // Progress 进度条
+import { watch, onMounted, ref } from "vue";
 import { useWindowSize } from "@vant/use";
+import NProgress from "nprogress"; // Progress 进度条
 export default {
+  components: {
+    drawerValue: {
+      type: Boolean,
+    },
+  },
   setup() {
     const { width, height } = useWindowSize();
-    const state = reactive({
-      height: 950,
-    });
-    watch([width, height], () => {
-      state.height = height;
-    });
-    var bodyWidth = document.body;
-
+    const offsetHeight = ref();
+    NProgress.configure({ showSpinner: false, trickle: false });
+    NProgress.start();
+    watch([width, height], () => {});
     onMounted(() => {
-      scrollListen();
+      listenScroll();
+      offsetHeight.value = document.documentElement.offsetHeight;
     });
-    const scrollListen = () => {
-      document.addEventListener("scroll", debounce(100, countDistance));
-    };
-    const countDistance = () => {
-      console.log(document.documentElement.scrollTop / state.height);
-    };
-
     const throttle = (delay, action) => {
       var last = 0;
       return function () {
@@ -34,7 +30,6 @@ export default {
         }
       };
     };
-
     const debounce = (delay, callback) => {
       var timeout = 0;
       return function (e) {
@@ -44,10 +39,20 @@ export default {
         }, delay);
       };
     };
-    NProgress.configure({ showSpinner: false });
-
+    const listenScroll = () => {
+      document.addEventListener("scroll", debounce(100, getprecent), true);
+    };
+    const getprecent = (value) => {
+      const scrollDistance =
+        document.documentElement.scrollTop /
+        (offsetHeight.value - height.value);
+      if (scrollDistance == 1) {
+        NProgress.set(0.99999999);
+      } else {
+        NProgress.set(scrollDistance);
+      }
+    };
     // NProgress.start();
-    // NProgress.done();
   },
 };
 </script>

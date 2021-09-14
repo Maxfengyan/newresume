@@ -32,4 +32,8 @@
   .download {
     display: none !important;
   }
+
+  #nprogress {
+    display: none !important;
+  }
 }

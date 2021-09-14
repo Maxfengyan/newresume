@@ -8,6 +8,7 @@
     </div>
     <div class="header-link">
       <svg-icon name="GitHub" @click="enter(1)" />
+      <svg-icon name="downloads" @click="enter(0)" />
       <svg-icon name="mail" @click="enter(2)" />
       <svg-icon name="wechat" @click="enter(3)" />
     </div>
@@ -28,7 +29,10 @@ export default {
     });
 
     const enter = (num) => {
-      if (num == 1) {
+      if (num == 0) {
+        window.location.href = window.location.href =
+          import.meta.env.VITE_SYSTEM_DOWNLOAD;
+      } else if (num == 1) {
         window.location.href = state.github;
       } else if (num == 2) {
         Dialog({ message: state.mail });
@@ -45,6 +49,11 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+.pdfdownload {
+  display: block;
+  color: #198aff;
+  margin-top: 10px;
+}
 .header {
   width: 100%;
   background: #292929;
@@ -74,7 +83,7 @@ export default {
   left: 14px;
   bottom: 0;
   display: flex;
-  height: 72%;
+  height: 100%;
   justify-content: space-evenly;
   align-items: center;
   flex-direction: column;
