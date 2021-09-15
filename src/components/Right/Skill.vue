@@ -1,6 +1,6 @@
 <template>
   <div class="skills">
-    <headertitle icon="book" name="掌握技能" englishName="SKILLS" />
+    <headertitle icon="hand" name="掌握技能" englishName="SKILLS" />
     <tabTitle
       style="margin-top: 10px"
       icon="pintu"
@@ -13,7 +13,7 @@
       <span>{{ item }}</span>
     </div>
 
-    <titlecomponent name="css" />
+    <titlecomponent name="CSS" />
     <div class="commontext" v-for="item in css">
       <svg-icon name="star" />
       <span>{{ item }}</span>
