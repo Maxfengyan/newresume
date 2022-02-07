@@ -1,0 +1,127 @@
+// 浅色主题
+$light-theme: (
+  // 字体颜色
+  font-color: #292929,
+  // 内容区域背景色
+  content-bgcolor: #fff,
+  // 页面背景色
+  background-color: #d4d4d4,
+  // 边框阴影色
+  box-shadow: #636161,
+  // 按钮边框阴影色
+  button-shadow: rgba(0, 0, 0, 0.7),
+  // 按钮hover
+  button-hoverbg: rgba(255, 255, 255, 0.1),
+  // 按钮active bg
+  button-activebg: #000,
+  // 按钮active color
+  button-active: #fff,
+  // 块背景色
+  block-bgcolor: #292929,
+  // 头部文字颜色
+  header-fontcolor: #dedede
+);
+
+// 深色主体
+$dark-theme: (
+  font-color: #ddd,
+  content-bgcolor: #fff,
+  background-color: #797979,
+);
+
+// 定义映射集合
+$themes: (
+  light-theme: $light-theme,
+  dark-theme: $dark-theme,
+);
+
+// 获取颜色并配置颜色
+// 字体颜色
+@mixin font-color() {
+  @each $theme-name, $theme in $themes {
+    [data-theme="#{$theme-name}"] & {
+      color: map-get($map: $theme, $key: font-color);
+    }
+  }
+}
+
+// 内容背景颜色
+@mixin content-bgcolor() {
+  @each $theme-name, $theme in $themes {
+    [data-theme="#{$theme-name}"] & {
+      background: map-get($map: $theme, $key: content-bgcolor);
+    }
+  }
+}
+
+// 背景颜色
+@mixin bg-color() {
+  @each $theme-name, $theme in $themes {
+    [data-theme="#{$theme-name}"] & {
+      background: map-get($map: $theme, $key: background-color);
+    }
+  }
+}
+
+// 边框阴影颜色
+@mixin box-color() {
+  @each $theme-name, $theme in $themes {
+    [data-theme="#{$theme-name}"] & {
+      box-shadow: 0 0.02rem 0.12rem 0 map-get($map: $theme, $key: box-shadow);
+    }
+  }
+}
+
+// 边框按钮阴影颜色
+@mixin button-boxcolor() {
+  @each $theme-name, $theme in $themes {
+    [data-theme="#{$theme-name}"] & {
+      box-shadow: 0 0.02rem 0.12rem 0 map-get($map: $theme, $key: button-shadow);
+    }
+  }
+}
+
+// 按钮hover bg
+@mixin button-hoverbg() {
+  @each $theme-name, $theme in $themes {
+    [data-theme="#{$theme-name}"] & {
+      background: map-get($map: $theme, $key: button-hoverbg);
+    }
+  }
+}
+
+// 按钮active bg
+@mixin button-activebg() {
+  @each $theme-name, $theme in $themes {
+    [data-theme="#{$theme-name}"] & {
+      background: map-get($map: $theme, $key: button-activebg);
+    }
+  }
+}
+
+// 按钮active
+@mixin button-active() {
+  @each $theme-name, $theme in $themes {
+    [data-theme="#{$theme-name}"] & {
+      color: map-get($map: $theme, $key: button-active);
+    }
+  }
+}
+
+// 头部背景色
+@mixin block-bgcolor() {
+  @each $theme-name, $theme in $themes {
+    [data-theme="#{$theme-name}"] & {
+      background: map-get($map: $theme, $key: block-bgcolor);
+    }
+  }
+}
+
+// 头部背景色
+@mixin header-fontcolor() {
+  @each $theme-name, $theme in $themes {
+    [data-theme="#{$theme-name}"] & {
+      color: map-get($map: $theme, $key: header-fontcolor);
+    }
+  }
+}

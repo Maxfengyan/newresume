@@ -1,0 +1,79 @@
+@import "../../variable.scss";
+.header {
+  width: 100%;
+  @include block-bgcolor();
+  height: 1.8rem;
+  overflow: hidden;
+}
+.header-avatar {
+  width: 1.4rem;
+  margin: 0.2rem;
+  border-radius: 0.05rem;
+  float: left;
+}
+.header-resume {
+  width: 1.4rem;
+  margin: 0.2rem;
+  border-radius: 0.05rem;
+  float: left;
+  display: none;
+}
+.header-link {
+  float: left;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100%;
+  font-weight: bold;
+  color: #dedede;
+  font-size: 0.15rem;
+  span {
+    margin: 0.05rem 0;
+    height: 0.2rem;
+    overflow: hidden;
+    svg {
+      font-size: 0.2rem;
+      margin-right: 0.1rem;
+    }
+    a {
+      @include header-fontcolor();
+    }
+    a:hover {
+      color: #409eff;
+    }
+  }
+}
+.gitee svg {
+  font-size: 0.66rem !important;
+  margin-top: -0.23rem;
+}
+.gitee a {
+  margin-top: -0.43rem;
+  display: block;
+  margin-left: 0.3rem;
+}
+.header-name {
+  color: #fff;
+  float: right;
+  margin-right: 0.2rem;
+  margin-top: 0.41rem;
+  span {
+    font-size: 0.5rem;
+    font-family: Courier New, Courier, monospace;
+    vertical-align: top;
+  }
+  svg {
+    font-size: 0.5rem;
+  }
+  div {
+    margin-top: 0.2rem;
+    margin-left: -0.04rem;
+  }
+}
+.webResume {
+  display: none;
+  i {
+    transform: rotate(77deg);
+    margin-right: 0.16rem;
+  }
+}

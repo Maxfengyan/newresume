@@ -1,0 +1,34 @@
+html,
+body {
+  background: #d4d4d4;
+}
+html {
+  font-size: 100px;
+}
+body {
+  font-size: 0.12rem;
+}
+#app {
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, PingFang SC, Hiragino Sans GB, Microsoft YaHei, Helvetica Neue, Helvetica, Arial, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol;
+  width: 100%;
+  user-select: none;
+}
+
+#nprogress .bar {
+  height: 0.025rem !important;
+}
+
+.EasterEgg {
+  transform: rotate(45deg);
+  position: fixed;
+  top: 47%;
+  z-index: 1000;
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+  background-clip: text;
+  -moz-background-clip: text;
+  background-image: linear-gradient(to right, #9ed110, #50b517, #179067, #476eaf, #9f49ac, #cc42a2, #ff3ba7, #ff5800, #ff8100, #feac00, #ffcc00, #ede604);
+  font-size: 0.25rem;
+  left: 20%;
+  opacity: 0;
+}

@@ -22,9 +22,9 @@
 
   /* 防止pdf过宽有遮挡 */
   .page {
-    width: 900px !important;
-    border-right: 1px solid #636161;
-    border-left: 1px solid #636161;
+    width: 9rem !important;
+    border-right: 0.01rem solid #636161;
+    border-left: 0.01rem solid #636161;
   }
 
   /* 隐藏返回顶部和下载按钮 */

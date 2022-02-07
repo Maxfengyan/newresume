@@ -82,13 +82,13 @@ export const epg = [
     icon: "system",
     title: "4.IPTV端epg页面: ",
     type: 0,
-    text: " 承接epg智能管理系统下发的静态数据后，在IPTV盒子端呈现的智能瀑布流页面，具备高性能加载、灵活可扩展、功能齐全的瀑布流页面。",
+    text: " 服务于江苏/辽宁广电IPTV盒子端的智能瀑布流页面，具备高性能加载、灵活可扩展、功能丰富齐全等特点。",
   },
   {
     icon: "about",
     title: "技术栈: ",
     type: 0,
-    text: " 原生js/canvas/gulp/polyfill/babel/koa",
+    text: " 原生js/canvas/gulp/polyfill/babel/koa/",
   },
   {
     icon: "show",
@@ -100,7 +100,7 @@ export const epg = [
     icon: "person",
     title: "本人负责: ",
     type: 0,
-    text: " 前端架构以及代码开发。",
+    text: " 项目整体架构以及代码开发。",
   },
 ];
 

@@ -1,0 +1,29 @@
+.content {
+  // margin-left: 75px;
+  margin-top: 15px;
+  padding-left: 15px;
+  // text-indent: -6%;
+  word-break: break-all;
+
+  svg {
+    font-size: 22px;
+    margin-right: 6px;
+  }
+  a {
+    color: #409eff;
+  }
+}
+span:first-letter {
+  color: red !important;
+}
+.content-title {
+  color: #409eff;
+  font-size: 15px;
+  font-weight: bold;
+}
+.content-text {
+  font-size: 14px;
+  line-height: 1.2;
+  font-weight: bold;
+  color: rgba(0, 0, 0, 0.65);
+}

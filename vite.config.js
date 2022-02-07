@@ -1,5 +1,6 @@
 import { defineConfig } from "vite";
 import vue from "@vitejs/plugin-vue";
+import vueJsx from "@vitejs/plugin-vue-jsx";
 import styleImport from "vite-plugin-style-import";
 import { svgBuilder } from "./src/plugin/icons/svgBuilder";
 // https://vitejs.dev/config/
@@ -19,6 +20,7 @@ export default defineConfig({
   },
   plugins: [
     vue(),
+    vueJsx({}),
     svgBuilder("./src/plugin/icons/svg/"),
     styleImport({
       libs: [

@@ -1,0 +1,45 @@
+@import "../variable.scss";
+.edu {
+  position: relative;
+  width: 94%;
+}
+.line {
+  width: 3px;
+  @include block-bgcolor();
+  position: absolute;
+  height: calc(100% - 0.19rem);
+  top: 0.19rem;
+  left: 0.2rem;
+  z-index: 1;
+}
+.university {
+  margin-left: 0.52rem;
+  margin-top: 0.11rem;
+  img {
+    width: 0.5rem;
+    vertical-align: middle;
+    margin-right: 0.07rem;
+  }
+}
+.university-name {
+  font-size: 0.25rem;
+  font-weight: bold;
+  @include font-color();
+}
+.specialty {
+  margin-left: 0.09rem;
+  margin-top: 0.09rem;
+  svg {
+    margin-right: 0.06rem;
+    font-size: 0.3rem;
+  }
+}
+.round {
+  width: 0.15rem;
+  height: 0.15rem;
+  border-radius: 50%;
+  @include block-bgcolor();
+  margin-left: 0.14rem;
+  position: absolute;
+  z-index: 1;
+}

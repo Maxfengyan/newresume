@@ -1,0 +1,39 @@
+@import "@/style/variable.scss";
+.header-title {
+  box-sizing: border-box;
+}
+.header-title-icon {
+  width: 0.45rem;
+  height: 0.45rem;
+  border-radius: 50%;
+  font-size: 0.25rem;
+  @include block-bgcolor();
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  float: left;
+  z-index: 10;
+  svg {
+    z-index: 10;
+  }
+}
+.header-title-name {
+  font-weight: 700;
+  line-height: 0.22rem;
+  margin-left: 0.1rem;
+  display: inline-block;
+  @include font-color();
+  & span:nth-child(1) {
+    font-size: 0.18rem;
+    display: block;
+  }
+  & span:nth-child(2) {
+    font-size: 0.13rem;
+    display: block;
+    font-weight: 700;
+  }
+  & span:nth-child(2):first-letter {
+    color: #409eff;
+    font-size: 0.21rem;
+  }
+}
