@@ -7,7 +7,7 @@ $paragraph-color: #198aff;
 // 浅色主题
 $light-theme: (
   // 字体颜色
-  font-color: #292929,
+  font-color: #213547,
   // 内容区域背景色
   content-bgcolor: #fff,
   // 页面背景色
@@ -82,7 +82,11 @@ $themes: (
 @mixin button-boxcolor() {
   @each $theme-name, $theme in $themes {
     [data-theme="#{$theme-name}"] & {
-      box-shadow: 0 0.02rem 0.12rem 0 map-get($map: $theme, $key: button-shadow);
+      box-shadow: 0
+        0.02rem
+        0.12rem
+        0
+        map-get($map: $theme, $key: button-shadow);
     }
   }
 }

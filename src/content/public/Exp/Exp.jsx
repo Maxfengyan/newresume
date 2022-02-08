@@ -29,16 +29,33 @@ const Exp = defineComponent({
     return () => {
       return (
         <div class={style.experience} ref={height}>
-          <header-title icon="rocket" name="项目与工作经验" english-name="EXPERIENCE" line-height={state.height} />
+          <header-title
+            icon="rocket"
+            name="项目与工作经验"
+            english-name="EXPERIENCE"
+            line-height={state.height}
+          />
           {state.componeyList.map((item) => {
             return (
               <Fragment>
-                <tab-title icon="package" title={item.componey} append={{ type: 1, content: item.time, url: "" }} />
+                <tab-title
+                  icon="package"
+                  title={item.componey}
+                  append={{ type: 1, content: item.time, url: "" }}
+                />
                 <title-component title-name={item.duty} componey={item.id} />
                 {item.experience.map((sub, sequence) => {
                   return sub.content.map((com, index) => {
-                    let title = index === 0 ? sequence + 1 + ". " + com.title : com.title;
-                    return <content-component icon={com.icon} title={title} text={com.text} type={com.type} />;
+                    let title =
+                      index === 0 ? sequence + 1 + ". " + com.title : com.title;
+                    return (
+                      <content-component
+                        icon={com.icon}
+                        title={title}
+                        text={com.text}
+                        type={com.type}
+                      />
+                    );
                   });
                 })}
               </Fragment>

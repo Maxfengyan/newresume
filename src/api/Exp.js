@@ -7,13 +7,6 @@ export function getExp(name) {
   });
 }
 
-export function getBaituExp() {
-  return request({
-    url: "/baituExp.json",
-    method: "get",
-  });
-}
-
 export function getExpContent() {
   return request({
     url: "/exp.json",

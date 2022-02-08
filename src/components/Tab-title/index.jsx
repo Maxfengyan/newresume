@@ -14,7 +14,7 @@ const TabTitle = defineComponent({
     append: {
       type: Object,
       default: {
-        type: 1, // 1:纯文本 2:链接文字
+        type: 1, // 1:纯文本 0:链接文字
         content: "",
         url: "",
       },
@@ -26,7 +26,9 @@ const TabTitle = defineComponent({
       if (props.append.type === 1) {
         textBlock = <div>{props.append.content}</div>;
       } else {
-        textBlock = <a href={props.append.url}>{props.append.content}</a>;
+        if (props.append.url) {
+          textBlock = <a href={props.append.url}>{props.append.content}</a>;
+        }
       }
       return (
         <div class={style["tab-title"]}>

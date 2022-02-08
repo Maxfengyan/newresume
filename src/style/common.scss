@@ -1,7 +1,9 @@
 html,
 body {
   background: #d4d4d4;
-  font-family: Inter, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+  font-family: Inter, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
 }
 html {
   font-size: 100px;
@@ -11,7 +13,10 @@ body {
 }
 #app {
   width: 100%;
+  letter-spacing: 0.002rem;
+  text-rendering: optimizeLegibility;
   user-select: none;
+  -webkit-font-smoothing: antialiased;
 }
 
 #nprogress .bar {
@@ -27,7 +32,21 @@ body {
   -webkit-background-clip: text;
   background-clip: text;
   -moz-background-clip: text;
-  background-image: linear-gradient(to right, #9ed110, #50b517, #179067, #476eaf, #9f49ac, #cc42a2, #ff3ba7, #ff5800, #ff8100, #feac00, #ffcc00, #ede604);
+  background-image: linear-gradient(
+    to right,
+    #9ed110,
+    #50b517,
+    #179067,
+    #476eaf,
+    #9f49ac,
+    #cc42a2,
+    #ff3ba7,
+    #ff5800,
+    #ff8100,
+    #feac00,
+    #ffcc00,
+    #ede604
+  );
   font-size: 0.25rem;
   left: 20%;
   opacity: 0;

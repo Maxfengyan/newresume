@@ -24,7 +24,7 @@ const Text = defineComponent({
   setup(props) {
     let className;
     let styleMargin;
-    if (!!parseInt(props.title)) {
+    if (props.icon === "system") {
       className = "paragraph-title";
       styleMargin = "margin-top: 0.25rem";
     } else {

@@ -1,14 +1,14 @@
-import { defineComponent, ref } from "vue";
+import { defineComponent } from "vue";
 import style from "@/style/pc/module/left.module.scss";
 import eduComponent from "@/content/public/Edu.jsx";
 import expComponent from "@/content/public/Exp/Exp.jsx";
-/* import personComponent from "@/content/public/Person.vue"; */
+import projectComponent from "@/content/public/Project.jsx";
 const Left = defineComponent({
   name: "Left",
   components: {
     eduComponent,
     expComponent,
-    /*   personComponent, */
+    projectComponent,
   },
   setup() {
     return () => {
@@ -16,7 +16,7 @@ const Left = defineComponent({
         <div class={style.left}>
           <edu-component />
           <exp-component />
-          {/* <person-component /> */}
+          <project-component />
         </div>
       );
     };

@@ -2,7 +2,7 @@ import { defineComponent, Fragment } from "vue";
 import nprogressComponent from "@/components/Nprogress/index.jsx";
 import headerComponent from "./components/Header.jsx";
 import leftComponent from "./components/Left.jsx";
-import rightComponent from "@/components/Right/index.vue";
+import rightComponent from "./components/right.jsx";
 import animateScrollTo from "animated-scroll-to";
 import style from "@/style/pc/pc.module.scss";
 
@@ -34,9 +34,21 @@ const Pc = defineComponent({
             <header-component class="animated fadeInDown" />
             <left-component class="animated fadeInLeft" />
             <right-component class="animated fadeInRight" />
-            <div class="EasterEgg">Any application that can be written in JavaScript, will eventually be written in JavaScript.</div>
-            <van-icon onClick={() => returnTop()} name="back-top" class={style.returnTop} title="回到顶部" />
-            <div onClick={() => download()} class={style.download} title="下载简历">
+            <div class="EasterEgg">
+              Any application that can be written in JavaScript, will eventually
+              be written in JavaScript.
+            </div>
+            <van-icon
+              onClick={() => returnTop()}
+              name="back-top"
+              class={style.returnTop}
+              title="回到顶部"
+            />
+            <div
+              onClick={() => download()}
+              class={style.download}
+              title="下载简历"
+            >
               <svg-icon name="download" />
             </div>
           </div>
