@@ -22,6 +22,12 @@ const TabTitle = defineComponent({
   },
   setup(props) {
     return () => {
+      let textBlock;
+      if (props.append.type === 1) {
+        textBlock = <div>{props.append.content}</div>;
+      } else {
+        textBlock = <a href={props.append.url}>{props.append.content}</a>;
+      }
       return (
         <div class={style["tab-title"]}>
           <div class={style["tab-title-icon"]}>
@@ -29,7 +35,7 @@ const TabTitle = defineComponent({
           </div>
           <div class={style["tab-title-content"]}>
             <span>{props.title}</span>
-            {props.append.type === 1 ? <div>{props.append.content}</div> : <a href={props.append.url}>{props.append.content}</a>}
+            {textBlock}
           </div>
         </div>
       );

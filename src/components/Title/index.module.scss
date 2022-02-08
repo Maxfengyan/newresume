@@ -1,0 +1,14 @@
+@import "@/style/variable.scss";
+.title {
+  font-size: 0.18rem;
+  color: $paragraph-color;
+  margin: 0.16rem 0 0.16rem 0.54rem;
+  b {
+    display: block;
+    margin-top: 0.15rem;
+    sup a {
+      cursor: pointer;
+      color: $paragraph-color;
+    }
+  }
+}

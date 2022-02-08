@@ -22,20 +22,29 @@ const Text = defineComponent({
     },
   },
   setup(props) {
+    let className;
+    let styleMargin;
+    if (!!parseInt(props.title)) {
+      className = "paragraph-title";
+      styleMargin = "margin-top: 0.25rem";
+    } else {
+      className = "content-title";
+      styleMargin = "margin-top: 0";
+    }
     return () => {
+      let textBlock;
+      if (props.type === 0) {
+        textBlock = <span class={style["content-text"]}>{props.text}</span>;
+      } else {
+        textBlock = <a href={props.text}>点击查看</a>;
+      }
       return (
-        <div class="content">
+        <div class={style.content} style={styleMargin}>
           <svg-icon name={props.icon} />
-          <span
-            class="content-title"
-            /* :style="{
-          'font-size': !!parseInt(title) ? '17px' : '15px',
-          color: !!parseInt(title) ? '#0a7df4' : '#409eff',
-        }" */
-          >
-            {title}
-          </span>
-          {props.type === 0 ? <span class="content-text">{text}</span> : <a href={props.text}>点击查看</a>}
+          <div class={style[className]}>
+            <b>{props.title}</b>
+            {textBlock}
+          </div>
         </div>
       );
     };

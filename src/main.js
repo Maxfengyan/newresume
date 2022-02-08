@@ -2,7 +2,6 @@ import { createApp } from "vue";
 import { Popup, Icon } from "vant";
 import svgIcon from "@/plugin/icons/svgIcon.vue";
 import App from "./App.jsx";
-import "nprogress/nprogress.css"; // Progress 进度条样式
 import "animate.css";
 import "./style/index.scss";
 

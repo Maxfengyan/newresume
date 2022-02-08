@@ -1,29 +1,43 @@
+@import "@/style/variable.scss";
 .content {
   // margin-left: 75px;
-  margin-top: 15px;
-  padding-left: 15px;
+  margin: 0.1rem 0;
+  padding-left: 0.5rem;
   // text-indent: -6%;
+  // word-wrap: break-word;
   word-break: break-all;
-
+  overflow: hidden;
+  display: flex;
+  width: 95%;
+  // box-sizing: border-box;
   svg {
-    font-size: 22px;
-    margin-right: 6px;
+    font-size: 0.22rem;
+    margin-right: 0.06rem;
+  }
+  div {
+    line-height: 1.5;
+    flex: 1;
   }
   a {
-    color: #409eff;
+    color: $paragraph-color;
   }
 }
 span:first-letter {
-  color: red !important;
+  color: $paragraph-color;
 }
-.content-title {
-  color: #409eff;
-  font-size: 15px;
-  font-weight: bold;
+.content-title b {
+  // color: $paragraph-color;
+  font-size: 0.14rem;
 }
+.paragraph-title {
+  b {
+    color: $paragraph-color;
+    font-size: 0.16rem;
+  }
+}
+
 .content-text {
-  font-size: 14px;
-  line-height: 1.2;
+  font-size: 0.14rem;
   font-weight: bold;
-  color: rgba(0, 0, 0, 0.65);
+  @include font-color();
 }

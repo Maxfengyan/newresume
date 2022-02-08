@@ -1,4 +1,12 @@
 import request from "../core/request";
+
+export function getExp(name) {
+  return request({
+    url: "/" + name + "Exp.json",
+    method: "get",
+  });
+}
+
 export function getBaituExp() {
   return request({
     url: "/baituExp.json",
@@ -6,9 +14,9 @@ export function getBaituExp() {
   });
 }
 
-export function getYuangeExp() {
+export function getExpContent() {
   return request({
-    url: "/yuangeExp.json",
+    url: "/exp.json",
     method: "get",
   });
 }

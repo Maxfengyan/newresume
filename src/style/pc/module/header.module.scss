@@ -39,7 +39,7 @@
       @include header-fontcolor();
     }
     a:hover {
-      color: #409eff;
+      color: $letter-color;
     }
   }
 }

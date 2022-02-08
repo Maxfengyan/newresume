@@ -26,12 +26,12 @@
     text-decoration: none;
   }
   a:hover {
-    background: #198aff;
+    background: $paragraph-color;
     color: #fff;
   }
 }
 .tab-title {
-  width: 100%;
+  width: 96%;
   height: 0.35rem;
   display: flex;
   align-items: center;
@@ -48,7 +48,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  background: #198aff;
+  background: $paragraph-color;
   svg {
     font-size: 0.2rem;
   }
