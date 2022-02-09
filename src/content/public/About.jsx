@@ -1,33 +1,33 @@
-import { defineComponent, Fragment, reactive, ref, onUpdated } from "vue";
+import { defineComponent, Fragment, reactive, ref } from "vue";
+import style from "@/style/public/about.module.scss";
 import headerTitle from "@/components/Header-title/index.jsx";
 import tabTitle from "@/components/Tab-title/index.jsx";
-import titleComponent from "@/components/Title/index.jsx";
 import contentComponent from "@/components/Content/index.jsx";
+import titleComponent from "@/components/Title/index.jsx";
 import lineComponent from "@/components/Line/index.jsx";
-import { getSkill } from "@/api/skill.js";
-import style from "@/style/public/skill.module.scss";
-const Skill = defineComponent({
-  name: "Skill",
+import { getMe } from "@/api/me.js";
+const About = defineComponent({
+  name: "About",
   components: {
     headerTitle,
-    lineComponent,
-    titleComponent,
     contentComponent,
+    titleComponent,
+    lineComponent,
     tabTitle,
   },
   setup() {
     const state = reactive({
-      skillList: [],
+      myList: [],
     });
-    getSkill().then((data) => {
-      state.skillList = data;
+    getMe().then((data) => {
+      state.myList = data;
     });
     return () => {
       return (
-        <div class={style.skills}>
-          <header-title icon="hand" name="掌握技能" englishName="SKILLS" />
+        <div class={style.aboutus}>
+          <header-title icon="aboutus" name="关于自己" englishName="ABOUTUS" />
           <line-component />
-          {state.skillList.map((item) => {
+          {state.myList.map((item) => {
             return (
               <Fragment>
                 <tab-title icon={item.icon} title={item.name} append={{ type: 1, content: "", url: "" }} />
@@ -50,4 +50,4 @@ const Skill = defineComponent({
   },
 });
 
-export default Skill;
+export default About;

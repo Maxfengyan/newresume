@@ -1,6 +1,5 @@
 @import "@/style/variable.scss";
 .content {
-  // margin-left: 75px;
   margin: 0.1rem 0;
   padding-left: 0.5rem;
   // text-indent: -6%;
@@ -38,6 +37,6 @@ span:first-letter {
 
 .content-text {
   font-size: 0.14rem;
-  font-weight: bold;
+  // font-weight: bold;
   @include font-color();
 }

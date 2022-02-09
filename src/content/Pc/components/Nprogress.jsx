@@ -1,12 +1,10 @@
 import { defineComponent, onMounted, ref } from "vue";
 import { useWindowSize } from "@vant/use";
 import NProgress from "nprogress"; // Progress 进度条
-
 const Nprogress = defineComponent({
   name: "Nprogress",
   setup() {
     const { height } = useWindowSize();
-    const offsetHeight = ref(0);
     NProgress.configure({ showSpinner: false, trickle: false });
     NProgress.start();
 
@@ -25,11 +23,10 @@ const Nprogress = defineComponent({
     };
     onMounted(() => {
       listenScroll();
-      offsetHeight.value = document.documentElement.offsetHeight;
     });
 
     const getprecent = (value) => {
-      const scrollDistance = document.documentElement.scrollTop / (offsetHeight.value - height.value);
+      const scrollDistance = document.documentElement.scrollTop / (document.documentElement.offsetHeight - height.value);
       if (scrollDistance == 1) {
         NProgress.set(0.99999999);
       } else {

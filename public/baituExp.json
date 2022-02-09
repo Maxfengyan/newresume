@@ -1,7 +1,7 @@
 {
   "id": "1",
   "code": "baitu",
-  "componey": "百途新媒体技术(北京)有限公司",
+  "componey": "百途新媒体技术(北京)",
   "duty": [
     {
       "name": "前端开发",
@@ -12,7 +12,7 @@
       "name": "Node.js后端开发"
     }
   ],
-  "time": "2018.09~至今",
+  "time": "2018.9~",
   "experience": [
     {
       "id": 1,

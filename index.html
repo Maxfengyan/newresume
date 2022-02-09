@@ -5,6 +5,21 @@
     <link rel="shortcut icon" href="./favicon.ico" />
     <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=0" />
     <title>马丰彦个人简历</title>
+    <script>
+      // 判断是否是移动设备，进行rem缩放
+      var isMobile = /android|avantgo|blackberry|blazer|compal|elaine|fennec|hiptop|iemobile|ip(hone|od|ad)|iris|kindle|lge |maemo|midp|mmp|opera m(ob|in)i|palm(os)?|phone|p(ixi|re)\/|plucker|pocket|psp|symbian|treo|up\.(browser|link)|vodafone|wap|windows (ce|phone)|xda|xiino/i.test(navigator.userAgent);
+      if (isMobile) {
+        var width = document.documentElement.clientWidth || document.body.clientWidth;
+        var ratio = width / 375;
+        var fontSize = 100 * ratio;
+        document.getElementsByTagName("html")[0].style["font-size"] = fontSize + "px";
+        // 监听自动刷新一下
+        function onResize() {
+          window.location.reload();
+        }
+        window.addEventListener("resize", onResize);
+      }
+    </script>
   </head>
   <body>
     <div id="app" data-theme="light-theme"></div>

@@ -4,7 +4,7 @@
   // width: 95%;
 }
 .line {
-  width: 3px;
+  width: 0.03rem;
   @include block-bgcolor();
   position: absolute;
   height: calc(100% - 0.19rem);

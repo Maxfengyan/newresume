@@ -1,8 +1,8 @@
 import { defineComponent } from "vue";
-import style from "@/style/pc/module/left.module.scss";
-import eduComponent from "@/content/public/Edu.jsx";
-import expComponent from "@/content/public/Exp/Exp.jsx";
-import projectComponent from "@/content/public/Project.jsx";
+import style from "@/style/public/left.module.scss";
+import eduComponent from "./Edu.jsx";
+import expComponent from "./Exp/Exp.jsx";
+import projectComponent from "./Project.jsx";
 const Left = defineComponent({
   name: "Left",
   components: {
@@ -10,10 +10,16 @@ const Left = defineComponent({
     expComponent,
     projectComponent,
   },
-  setup() {
+  props: {
+    widthValue: {
+      type: String,
+      required: true,
+    },
+  },
+  setup(props) {
     return () => {
       return (
-        <div class={style.left}>
+        <div class={style.left} style={{ width: props.widthValue }}>
           <edu-component />
           <exp-component />
           <project-component />

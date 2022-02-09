@@ -1,24 +1,22 @@
-import { defineComponent, ref } from "vue";
+import { defineComponent } from "vue";
 import style from "@/style/public/edu.module.scss";
 import headerTitle from "@/components/Header-title/index.jsx";
 import tabTitle from "@/components/Tab-title/index.jsx";
+import lineComponent from "@/components/Line/index.jsx";
 import unImg from "@/assets/un.jpg";
 const Edu = defineComponent({
   name: "Edu",
   components: {
     tabTitle,
     headerTitle,
+    lineComponent,
   },
   setup() {
-    const height = ref(0);
     return () => {
-      let lineHeight = 0;
-      if (height.value.offsetHeight) {
-        lineHeight = height.value.offsetHeight / 100;
-      }
       return (
-        <div class={style.edu} ref={height}>
-          <header-title icon="book" name="教育经历" english-name="EDUCATION" line-height={lineHeight} />
+        <div class={style.edu}>
+          <header-title icon="book" name="教育经历" english-name="EDUCATION" />
+          <line-component />
           <tab-title icon="bookmark" title="本科" append={{ type: 1, content: "2013 ~ 2017", url: "" }} />
           <div class={style.university}>
             <img src={unImg} />

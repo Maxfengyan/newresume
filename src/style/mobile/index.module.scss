@@ -1,0 +1,25 @@
+@import "@/style/variable.scss";
+.sort {
+  font-size: 0.2rem;
+  color: #000;
+  padding: 0.1rem;
+  border-radius: 50%;
+  background: #fff;
+  position: fixed;
+  transform: rotate(90deg);
+  right: 0.1rem;
+  top: 3%;
+  z-index: 2003;
+  transition: all 0.5s ease-in;
+  @include button-boxcolor();
+}
+.returnTop {
+  position: fixed;
+  right: 0.1rem;
+  bottom: 15%;
+  z-index: 2003;
+  padding: 0.1rem;
+  background: #fff;
+  border-radius: 50%;
+  @include button-boxcolor();
+}

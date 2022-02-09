@@ -1,46 +1,48 @@
-::-webkit-scrollbar-track-piece {
-  border: none;
-  position: absolute;
-  padding: 0;
-  box-shadow: none;
-  background-color: #ddd;
-  border-radius: 0.01rem;
-}
-::-webkit-scrollbar-thumb:vertical {
-  background-color: #999;
-  border-radius: 0;
-  border: none;
-}
-::-webkit-scrollbar-thumb:horizontal {
-  background-color: #999;
-  border-radius: 0;
-  border: none;
-}
-::-webkit-scrollbar {
-  width: 0.05rem;
-  height: 0.12rem;
-  border: none;
-  background: #ddd !important;
-}
-::-webkit-scrollbar-button:vertical {
-  display: none;
-}
-::-webkit-scrollbar-track:vertical {
-  background-color: black;
-}
-::-webkit-scrollbar-track-piece {
-  background: #fff;
-}
-::-webkit-scrollbar-thumb:vertical {
-  background-color: #8e8e8e;
-  border-radius: 0.05rem;
-}
-::-webkit-scrollbar-thumb:vertical:hover {
-  background-color: #3b3b3b;
-}
-::-webkit-scrollbar-corner:vertical {
-  background-color: #535353;
-}
-::-webkit-scrollbar-resizer:vertical {
-  background-color: #ff6e00;
+@media screen and (min-width: 1140px) {
+  ::-webkit-scrollbar-track-piece {
+    border: none;
+    position: absolute;
+    padding: 0;
+    box-shadow: none;
+    background-color: #ddd;
+    border-radius: 0.01rem;
+  }
+  ::-webkit-scrollbar-thumb:vertical {
+    background-color: #999;
+    border-radius: 0;
+    border: none;
+  }
+  ::-webkit-scrollbar-thumb:horizontal {
+    background-color: #999;
+    border-radius: 0;
+    border: none;
+  }
+  ::-webkit-scrollbar {
+    width: 0.05rem;
+    height: 0.12rem;
+    border: none;
+    background: #ddd !important;
+  }
+  ::-webkit-scrollbar-button:vertical {
+    display: none;
+  }
+  ::-webkit-scrollbar-track:vertical {
+    background-color: black;
+  }
+  ::-webkit-scrollbar-track-piece {
+    background: #fff;
+  }
+  ::-webkit-scrollbar-thumb:vertical {
+    background-color: #8e8e8e;
+    border-radius: 0.05rem;
+  }
+  ::-webkit-scrollbar-thumb:vertical:hover {
+    background-color: #3b3b3b;
+  }
+  ::-webkit-scrollbar-corner:vertical {
+    background-color: #535353;
+  }
+  ::-webkit-scrollbar-resizer:vertical {
+    background-color: #ff6e00;
+  }
 }

@@ -1,7 +1,7 @@
 import { defineComponent, ref, watch } from "vue";
 import { useWindowSize } from "@vant/use";
-import pcComponent from "./content/Pc/index.jsx";
-import mobileComponent from "./components/Mobile/index.vue";
+import pcComponent from "./content/pc/index.jsx";
+import mobileComponent from "./content/mobile/index.jsx";
 const App = defineComponent({
   name: "App",
   components: {

@@ -5,12 +5,11 @@ const Title = defineComponent({
   name: "Title",
   props: {
     titleName: {
-      type: Array,
+      type: [Array, String],
       required: true,
     },
     componey: {
       type: String,
-      required: true,
     },
   },
   setup(props) {
@@ -20,20 +19,24 @@ const Title = defineComponent({
     return () => {
       return (
         <div class={style.title}>
-          {props.titleName.map((item, index) => {
-            return (
-              <b>
-                {item.name}
-                {item.sup ? (
-                  <sup>
-                    <a href="javascript:void(0)" title={item.tip} onClick={() => tips(item.tip)}>
-                      [{item.sup}]
-                    </a>
-                  </sup>
-                ) : null}
-              </b>
-            );
-          })}
+          {typeof props.titleName === "string" ? (
+            <b>{props.titleName}</b>
+          ) : (
+            props.titleName.map((item) => {
+              return (
+                <b>
+                  {item.name}
+                  {item.sup ? (
+                    <sup>
+                      <a href="javascript:void(0)" title={item.tip} onClick={() => tips(item.tip)}>
+                        [{item.sup}]
+                      </a>
+                    </sup>
+                  ) : null}
+                </b>
+              );
+            })
+          )}
         </div>
       );
     };

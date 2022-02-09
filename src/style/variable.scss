@@ -18,10 +18,6 @@ $light-theme: (
   button-shadow: rgba(0, 0, 0, 0.7),
   // 按钮hover
   button-hoverbg: rgba(255, 255, 255, 0.1),
-  // 按钮active bg
-  button-activebg: #000,
-  // 按钮active color
-  button-active: #fff,
   // 块背景色
   block-bgcolor: #292929,
   // 头部文字颜色
@@ -82,11 +78,7 @@ $themes: (
 @mixin button-boxcolor() {
   @each $theme-name, $theme in $themes {
     [data-theme="#{$theme-name}"] & {
-      box-shadow: 0
-        0.02rem
-        0.12rem
-        0
-        map-get($map: $theme, $key: button-shadow);
+      box-shadow: 0 0.02rem 0.12rem 0 map-get($map: $theme, $key: button-shadow);
     }
   }
 }
@@ -96,24 +88,6 @@ $themes: (
   @each $theme-name, $theme in $themes {
     [data-theme="#{$theme-name}"] & {
       background: map-get($map: $theme, $key: button-hoverbg);
-    }
-  }
-}
-
-// 按钮active bg
-@mixin button-activebg() {
-  @each $theme-name, $theme in $themes {
-    [data-theme="#{$theme-name}"] & {
-      background: map-get($map: $theme, $key: button-activebg);
-    }
-  }
-}
-
-// 按钮active
-@mixin button-active() {
-  @each $theme-name, $theme in $themes {
-    [data-theme="#{$theme-name}"] & {
-      color: map-get($map: $theme, $key: button-active);
     }
   }
 }
