@@ -21,7 +21,7 @@
   text-align: center;
   font-size: 0.14rem;
   div {
-    margin-top: 0.15rem;
+    margin-top: 0.2rem;
   }
 }
 .header-link {
@@ -37,5 +37,6 @@
   width: 0.3rem;
   svg {
     font-size: 0.2rem;
+    @include header-fontcolor();
   }
 }

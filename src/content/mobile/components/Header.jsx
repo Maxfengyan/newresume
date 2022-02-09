@@ -13,7 +13,8 @@ const Header = defineComponent({
     });
     const enter = (num) => {
       if (num == 0) {
-        window.location.href = window.location.href = import.meta.env.VITE_SYSTEM_DOWNLOAD;
+        window.location.href = window.location.href =
+          import.meta.env.VITE_SYSTEM_DOWNLOAD;
       } else if (num == 1) {
         window.location.href = state.github;
       } else if (num == 2) {
@@ -33,7 +34,7 @@ const Header = defineComponent({
           </div>
           <div class={style["header-link"]}>
             <svg-icon name="GitHub" onClick={() => enter(1)} />
-            <svg-icon name="downloads" onClick={() => enter(0)} />
+            <svg-icon name="download2" onClick={() => enter(0)} />
             <svg-icon name="mail" onClick={() => enter(2)} />
             <svg-icon name="wechat" onClick={() => enter(3)} />
           </div>

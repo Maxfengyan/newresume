@@ -25,18 +25,19 @@
   margin-left: 0.52rem;
   margin-top: 0.11rem;
   img {
-    width: 0.5rem;
-    vertical-align: middle;
+    width: 0.4rem;
+    vertical-align: top;
     margin-right: 0.07rem;
   }
 }
 .university-name {
   font-size: 0.25rem;
   font-weight: bold;
+  line-height: 0.4rem;
   @include font-color();
 }
 .specialty {
-  margin-left: 0.09rem;
+  margin-left: 0.05rem;
   margin-top: 0.09rem;
   svg {
     margin-right: 0.06rem;

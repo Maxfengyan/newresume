@@ -1,4 +1,13 @@
 @import "@/style/variable.scss";
+
+@media only print {
+  /* 隐藏返回顶部和下载按钮 */
+  .returnTop,
+  .darkModel,
+  .download {
+    display: none !important;
+  }
+}
 .returnTop,
 .download,
 .darkModel {

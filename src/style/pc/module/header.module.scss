@@ -1,4 +1,17 @@
 @import "../../variable.scss";
+@media only print {
+  /* 替换二维码为web简历 */
+  .header-avatar {
+    display: none;
+  }
+  .header-resume {
+    display: block !important;
+  }
+  /* 显示提示文字 */
+  .webResume {
+    display: block !important;
+  }
+}
 .header {
   width: 100%;
   @include block-bgcolor();

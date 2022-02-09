@@ -1,4 +1,10 @@
 @import "@/style/variable.scss";
+@media only print {
+  /* 干掉下载链接文字 */
+  .tab-title-content a {
+    display: none;
+  }
+}
 .tab-title-content {
   @include block-bgcolor();
   float: left;
@@ -51,5 +57,6 @@
   background: $paragraph-color;
   svg {
     font-size: 0.2rem;
+    color: #fff;
   }
 }

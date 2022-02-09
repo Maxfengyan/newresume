@@ -16,6 +16,7 @@
   z-index: 10;
   svg {
     z-index: 10;
+    @include header-fontcolor();
   }
 }
 .header-title-name {

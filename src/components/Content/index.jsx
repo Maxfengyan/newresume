@@ -25,7 +25,7 @@ const Text = defineComponent({
     let className;
     let styleMargin;
     let mobilePadding;
-    if (props.icon === "system") {
+    if (props.icon === "") {
       className = "paragraph-title";
       styleMargin = "margin-top: 0.25rem;";
     } else {
@@ -44,7 +44,7 @@ const Text = defineComponent({
       }
       return (
         <div class={style.content} style={styleMargin}>
-          {!isMobile ? <svg-icon name={props.icon} /> : null}
+          {!isMobile && props.icon ? <svg-icon name={props.icon} /> : null}
           <div class={style[className]} style={mobilePadding}>
             <b>{props.title}</b>
             {textBlock}

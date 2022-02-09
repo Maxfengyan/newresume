@@ -30,13 +30,24 @@ const About = defineComponent({
           {state.myList.map((item) => {
             return (
               <Fragment>
-                <tab-title icon={item.icon} title={item.name} append={{ type: 1, content: "", url: "" }} />
+                <tab-title
+                  icon={item.icon}
+                  title={item.name}
+                  append={{ type: 1, content: "", url: "" }}
+                />
                 {item.content.map((com) => {
                   return (
                     <Fragment>
                       <title-component title-name={com.title} />
                       {com.content.map((text) => {
-                        return <content-component icon="star" title="" text={text} type={0} />;
+                        return (
+                          <content-component
+                            icon="star"
+                            title=""
+                            text={text}
+                            type={0}
+                          />
+                        );
                       })}
                     </Fragment>
                   );

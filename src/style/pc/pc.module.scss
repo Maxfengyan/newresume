@@ -1,4 +1,13 @@
 @import "../variable.scss";
+@media only print {
+  /* 防止pdf过宽有遮挡 */
+  .page {
+    width: 9rem !important;
+    /* border-right: 0.01rem solid #636161;
+    border-left: 0.01rem solid #636161; */
+    box-shadow: none;
+  }
+}
 .page {
   width: 11rem;
   margin: 0.16rem auto;

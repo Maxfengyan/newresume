@@ -15,7 +15,7 @@
       "code": "pcproject",
       "content": [
         {
-          "icon": "system",
+          "icon": "",
           "title": "PC端项目: ",
           "type": 0,
           "text": "重庆电力研究所电力系统、大连海关内部系统、驾校管理系统、辽台都市惠商城系统等。"
@@ -40,7 +40,7 @@
       "code": "mobileproject",
       "content": [
         {
-          "icon": "system",
+          "icon": "",
           "title": "移动端项目: ",
           "type": 0,
           "text": "微信小程序开发(已上线：爱估回收、环卫士、RSLab等)，混合安卓端开发"
