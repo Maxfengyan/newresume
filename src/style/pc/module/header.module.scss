@@ -47,6 +47,7 @@
     svg {
       font-size: 0.2rem;
       margin-right: 0.1rem;
+      color: #fff;
     }
     a {
       @include header-fontcolor();
@@ -55,15 +56,6 @@
       color: $letter-color;
     }
   }
-}
-.gitee svg {
-  font-size: 0.66rem !important;
-  margin-top: -0.23rem;
-}
-.gitee a {
-  margin-top: -0.43rem;
-  display: block;
-  margin-left: 0.3rem;
 }
 .header-name {
   color: #fff;
@@ -81,10 +73,13 @@
   div {
     margin-top: 0.2rem;
     margin-left: -0.04rem;
+    font-size: 0.16rem;
   }
 }
 .webResume {
   display: none;
+  color: $letter-color;
+  text-decoration: underline;
   i {
     transform: rotate(77deg);
     margin-right: 0.16rem;

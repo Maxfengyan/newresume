@@ -3,7 +3,7 @@ import style from "@/style/public/edu.module.scss";
 import headerTitle from "@/components/Header-title/index.jsx";
 import tabTitle from "@/components/Tab-title/index.jsx";
 import lineComponent from "@/components/Line/index.jsx";
-import unImg from "@/assets/un.jpg";
+import unImg from "@/assets/logo2.png";
 const Edu = defineComponent({
   name: "Edu",
   components: {
@@ -22,7 +22,7 @@ const Edu = defineComponent({
             <img src={unImg} />
             <span class={style["university-name"]}>沈阳师范大学</span>
             <div class={style.specialty}>
-              <svg-icon name="edu" />
+              <svg-icon name="cap" />
               <span>软件工程</span>
             </div>
           </div>

@@ -12,6 +12,7 @@
   svg {
     font-size: 0.22rem;
     margin-right: 0.06rem;
+    @include font-color();
   }
   div {
     line-height: 1.5;
@@ -26,6 +27,7 @@ span:first-letter {
 }
 .content-title b {
   // color: $paragraph-color;
+  @include font-color();
   font-size: 0.14rem;
 }
 .paragraph-title {

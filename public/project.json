@@ -11,13 +11,13 @@
         "text": "自己搭建的vue3-vite后台管理系统，功能齐全、组件解耦清晰、权限灵活配置、即拿即用。"
       },
       {
-        "icon": "about",
+        "icon": "browser",
         "title": "技术栈: ",
         "type": 0,
         "text": "vue3/vite/vuex/vue-touter/element-plus/js-cookie/axios/svg-icon/"
       },
       {
-        "icon": "show",
+        "icon": "desctop",
         "title": "演示地址: ",
         "type": 1,
         "text": "https://maxfengyan.gitee.io/vue3-admin-template-vite/#/login"
@@ -42,13 +42,13 @@
         "text": "一款可视化编辑元素并生成html的vue操作组件，通过可视化拖拉拽页面小组件，实现编排生成html页面的功能"
       },
       {
-        "icon": "about",
+        "icon": "browser",
         "title": "技术栈: ",
         "type": 0,
         "text": "vue3/canvas/element-plus"
       },
       {
-        "icon": "show",
+        "icon": "desctop",
         "title": "演示地址: ",
         "type": 1,
         "text": "https://maxfengyan.gitee.io/visual-drag/index.html"
@@ -73,7 +73,7 @@
         "text": "一个在机顶盒端输出调试信息的js脚本插件"
       },
       {
-        "icon": "about",
+        "icon": "browser",
         "title": "技术栈: ",
         "type": 0,
         "text": "原生js/webpack/es6"
@@ -98,7 +98,7 @@
         "text": "一款桌面端 TODOllist，记录每天要干啥,使用方便简单，可随时记录，本地存储。"
       },
       {
-        "icon": "about",
+        "icon": "browser",
         "title": "技术栈: ",
         "type": 0,
         "text": "electron/vue3/vite"
@@ -123,7 +123,7 @@
         "text": "一款桌面端多excel文件比对数据汇总处理的应用。"
       },
       {
-        "icon": "about",
+        "icon": "browser",
         "title": "技术栈: ",
         "type": 0,
         "text": "electron/vue/exceljs"
@@ -148,7 +148,7 @@
         "text": "一款短视频播放的机顶盒端APK应用"
       },
       {
-        "icon": "about",
+        "icon": "browser",
         "title": "技术栈: ",
         "type": 0,
         "text": "Hbuilder/webpack/js/xgplayer/polyfill"
@@ -173,7 +173,7 @@
         "text": " 此款web端个人简历，具备响应式布局，pc端/移动端兼容以及pdf自适应下载功能"
       },
       {
-        "icon": "about",
+        "icon": "browser",
         "title": "技术栈: ",
         "type": 0,
         "text": " vue3/vite"

@@ -37,10 +37,17 @@
   @include font-color();
 }
 .specialty {
-  margin-left: 0.05rem;
+  margin-left: 0.06rem;
   margin-top: 0.09rem;
   svg {
-    margin-right: 0.06rem;
+    margin-right: 0.1rem;
+    @include font-color();
     font-size: 0.3rem;
+  }
+  span {
+    vertical-align: middle;
+    @include font-color();
+    font-size: 0.14rem;
+    font-weight: bold;
   }
 }

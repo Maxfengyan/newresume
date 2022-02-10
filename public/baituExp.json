@@ -26,19 +26,19 @@
           "text": "服务于江苏/辽宁省台广电的融合用户平台，集IPTV用户管控系统、增值业务系统、账务系统、数据监控多系统组合的后台管理系统。"
         },
         {
-          "icon": "about",
+          "icon": "browser",
           "title": "技术栈: ",
           "type": 0,
           "text": "vue/vuex/vue-router/element-ui/excelJs/Echarts/easy-mock/"
         },
         {
-          "icon": "show",
+          "icon": "desctop",
           "title": "演示地址: ",
           "type": 1,
           "text": "https://maxfengyan.gitee.io/boss-login/#/"
         },
         {
-          "icon": "person",
+          "icon": "user1",
           "title": "本人负责: ",
           "type": 0,
           "text": "整个系统的前端架构以及代码开发。"
@@ -58,19 +58,19 @@
           "text": "服务于江苏/辽宁/浙江省台广电的epg智能系统，具有可视化编排布局EPG页面、静态数据生成审核下发、栏目节目智能编排上下线等功能。"
         },
         {
-          "icon": "about",
+          "icon": "browser",
           "title": "技术栈: ",
           "type": 0,
           "text": "vue3/vite/原生js/canvas"
         },
         {
-          "icon": "show",
+          "icon": "desctop",
           "title": "核心模块演示地址: ",
           "type": 1,
           "text": "https://maxfengyan.gitee.io/visual-drag/index.html"
         },
         {
-          "icon": "person",
+          "icon": "user1",
           "title": "本人负责: ",
           "type": 0,
           "text": "系统的前端架构以及代码开发。"
@@ -89,13 +89,13 @@
           "text": "服务于山东海看广电的营销系统，负责配置EPG端营销活动：答题、抽奖、签到、大转盘等多种配置创建模式。"
         },
         {
-          "icon": "about",
+          "icon": "browser",
           "title": "技术栈: ",
           "type": 0,
           "text": "jsp/原生js/canvas"
         },
         {
-          "icon": "person",
+          "icon": "user1",
           "title": "本人负责: ",
           "type": 0,
           "text": "系统的前端架构以及代码开发。"
@@ -114,14 +114,14 @@
           "text": "服务于江苏/辽宁广电IPTV盒子端的智能瀑布流页面，具备高性能加载、灵活可扩展、功能丰富齐全等特点。"
         },
         {
-          "icon": "about",
+          "icon": "browser",
           "title": "技术栈: ",
           "type": 0,
           "text": "原生js/canvas/gulp/polyfill/babel/koa/"
         },
 
         {
-          "icon": "person",
+          "icon": "user1",
           "title": "本人负责: ",
           "type": 0,
           "text": "项目整体架构以及代码开发。"
@@ -140,13 +140,13 @@
           "text": "服务于浙江广电的媒资管理系统，负责点播/直播节目的编排、审核上下线、上下游节目透传以及工单处理等功能。"
         },
         {
-          "icon": "about",
+          "icon": "browser",
           "title": "技术栈: ",
           "type": 0,
           "text": "vue/vue-router/vuex/webpack"
         },
         {
-          "icon": "person",
+          "icon": "user1",
           "title": "本人负责: ",
           "type": 0,
           "text": "前端代码开发。"
@@ -165,14 +165,14 @@
           "text": "服务于辽宁电信IPTV用户EPG端观看、购买、收藏接口。"
         },
         {
-          "icon": "about",
+          "icon": "browser",
           "title": "技术栈: ",
           "type": 0,
           "text": "nodejs/express/pm2/redis/mongodb/log4j"
         },
 
         {
-          "icon": "person",
+          "icon": "user1",
           "title": "本人负责: ",
           "type": 0,
           "text": "整个项目开发。"
@@ -191,13 +191,13 @@
           "text": "服务于江苏广电的高并发接口系统，用于用户开机自采、鉴权、失效等信息处理。"
         },
         {
-          "icon": "about",
+          "icon": "browser",
           "title": "技术栈: ",
           "type": 0,
           "text": "nodejs/fastify/pm2/mongodb/zookpeer/codis/winston"
         },
         {
-          "icon": "person",
+          "icon": "user1",
           "title": "本人负责: ",
           "type": 0,
           "text": "项目初始架构以及后续部分开发。"
@@ -216,13 +216,13 @@
           "text": "服务于公司内部的管理系统，管理所有机顶盒入口地址，便于切换访问环境以及功能调试。"
         },
         {
-          "icon": "about",
+          "icon": "browser",
           "title": "技术栈: ",
           "type": 0,
           "text": "nodejs/nestJs/mongodb/pm2/ts"
         },
         {
-          "icon": "person",
+          "icon": "user1",
           "title": "本人负责: ",
           "type": 0,
           "text": "整个项目的开发。"
@@ -241,13 +241,13 @@
           "text": "服务于公司内部的系统，1.zip:产品经理通过系统上传原型，生成静态资源url便于访问。2.excel:上传excel文件后程序解析生成html页面便于预览查看。"
         },
         {
-          "icon": "about",
+          "icon": "browser",
           "title": "技术栈: ",
           "type": 0,
           "text": "nodejs/nestJs/adm-zip/excelJs"
         },
         {
-          "icon": "person",
+          "icon": "user1",
           "title": "本人负责: ",
           "type": 0,
           "text": "整个项目的开发。"
@@ -266,13 +266,13 @@
           "text": "服务于辽宁广电的大屏展示系统，主要展示实时用户开户数据、订购趋势、开机数量等数据。"
         },
         {
-          "icon": "about",
+          "icon": "browser",
           "title": "技术栈: ",
           "type": 0,
           "text": "Echarts/原生js"
         },
         {
-          "icon": "person",
+          "icon": "user1",
           "title": "本人负责: ",
           "type": 0,
           "text": "部分前端代码开发。"

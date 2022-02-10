@@ -6,3 +6,10 @@ export function getMe() {
     method: "get",
   });
 }
+
+export function getBasicInfo() {
+  return request({
+    url: "/info.json",
+    method: "get",
+  });
+}

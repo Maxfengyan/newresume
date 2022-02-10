@@ -1,26 +1,31 @@
-import { defineComponent, ref, reactive } from "vue";
+import { defineComponent, reactive } from "vue";
+import HeaderInfo from "@/content/public/headerInfo.js";
 import style from "@/style/mobile/module/header.module.scss";
 import avatar from "@/assets/ava.jpg";
 import erweima from "@/assets/avatar.png";
-import { ImagePreview, Dialog } from "vant";
+import { ImagePreview } from "vant";
 const Header = defineComponent({
   name: "Header",
-  setup() {
-    const state = reactive({
-      github: "https://github.com/Maxfengyan",
-      mail: "18624443327@163.com",
-      wechat: "18624443327",
-    });
+  emits: ["closeIcon"],
+  setup(props, { emit }) {
+    const { state } = HeaderInfo();
     const enter = (num) => {
       if (num == 0) {
-        window.location.href = window.location.href =
-          import.meta.env.VITE_SYSTEM_DOWNLOAD;
+        window.location.href = state.gitee;
       } else if (num == 1) {
         window.location.href = state.github;
       } else if (num == 2) {
-        Dialog({ message: state.mail });
+        window.location.href = state.csdn;
       } else {
-        ImagePreview([erweima]);
+        emit("closeIcon", false);
+        ImagePreview({
+          images: [erweima],
+          closeable: true,
+          showIndex: false,
+          onClose() {
+            emit("closeIcon", true);
+          },
+        });
       }
     };
     return () => {
@@ -34,8 +39,8 @@ const Header = defineComponent({
           </div>
           <div class={style["header-link"]}>
             <svg-icon name="GitHub" onClick={() => enter(1)} />
-            <svg-icon name="download2" onClick={() => enter(0)} />
-            <svg-icon name="mail" onClick={() => enter(2)} />
+            <svg-icon name="gitee2" onClick={() => enter(0)} />
+            <svg-icon name="doodle" onClick={() => enter(2)} />
             <svg-icon name="wechat" onClick={() => enter(3)} />
           </div>
         </div>

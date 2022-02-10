@@ -6,7 +6,7 @@
   }
 }
 .tab-title-content {
-  @include block-bgcolor();
+  @include clauses-bgcolor();
   float: left;
   @include header-fontcolor();
   padding: 0.05rem;
@@ -20,6 +20,10 @@
     display: inline-block;
     position: absolute;
     right: 0.14rem;
+    font-weight: bold;
+  }
+  span {
+    font-weight: bold;
   }
   a {
     @include content-bgcolor();

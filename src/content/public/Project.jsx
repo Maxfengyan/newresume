@@ -47,8 +47,8 @@ const Project = defineComponent({
             }}
           />
           <title-component title-name="" />
-          <content-component feature="project" icon="more" title="gitee地址:" text="点击查看" type={1} url="https://gitee.com/Maxfengyan" />
-          <content-component feature="project" icon="more" title="github地址:" text="点击查看" type={1} url="https://github.com/Maxfengyan" />
+          <content-component feature="project" icon="gitee2" title="gitee地址:" type={1} text="https://gitee.com/Maxfengyan" />
+          <content-component feature="project" icon="1github" title="github地址:" type={1} text="https://github.com/Maxfengyan" />
         </div>
       );
     };
