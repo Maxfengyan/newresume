@@ -18,19 +18,25 @@
           "icon": "",
           "title": "PC端项目: ",
           "type": 0,
-          "text": "重庆电力研究所电力系统、大连海关内部系统、驾校管理系统、辽台都市惠商城系统等。"
+          "text": "重庆电力研究所电力系统、大连海关内部系统、驾校管理系统、辽台都市惠商城系统等"
         },
         {
           "icon": "browser",
           "title": "技术栈: ",
           "type": 0,
-          "text": "jQuery/Angular/layui/mui/"
+          "text": "jQuery/Angular/layui/mui等"
         },
         {
           "icon": "user1",
           "title": "本人负责: ",
           "type": 0,
-          "text": "前端代码开发。"
+          "text": "前端代码开发"
+        },
+        {
+          "icon": "flash",
+          "title": "项目亮点: ",
+          "type": 0,
+          "text": "外包项目，锻炼人"
         }
       ]
     },
@@ -55,7 +61,13 @@
           "icon": "user1",
           "title": "本人负责: ",
           "type": 0,
-          "text": "前端代码开发。"
+          "text": "前端代码开发"
+        },
+        {
+          "icon": "flash",
+          "title": "项目亮点: ",
+          "type": 0,
+          "text": "外包项目，锻炼人"
         }
       ]
     }
