@@ -1,7 +1,7 @@
 import { defineComponent, ref } from "vue";
 import HeaderInfo from "@/content/public/headerInfo.js";
 import style from "@/style/pc/module/header.module.scss";
-import avatar from "@/assets/avatar.png";
+import avatar from "@/assets/avatar1.jpg";
 import resume from "@/assets/resume.png";
 const Header = defineComponent({
   name: "Header",

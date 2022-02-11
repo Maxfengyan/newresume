@@ -2,7 +2,7 @@ import { defineComponent, reactive } from "vue";
 import HeaderInfo from "@/content/public/headerInfo.js";
 import style from "@/style/mobile/module/header.module.scss";
 import avatar from "@/assets/ava.jpg";
-import erweima from "@/assets/avatar.png";
+import erweima from "@/assets/avatar1.jpg";
 import { ImagePreview } from "vant";
 const Header = defineComponent({
   name: "Header",

@@ -50,7 +50,7 @@
 
 #### 项目逻辑
 
-![正常模式](./public/logic.png)
+![正常模式](./backUp/logic.png)
 
 #### 数据渲染模式
 

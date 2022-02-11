@@ -21,8 +21,8 @@ const Pc = defineComponent({
           <nprogress-component />
           <div class={style.page}>
             <header-component class="animated fadeInDown" />
-            <left-component width-value="50%" class="animated fadeInLeft" />
-            <right-component width-value="50%" class="animated fadeInRight" />
+            <left-component width-value="50%" class="animated fadeInLeft delay-1s" />
+            <right-component width-value="50%" class="animated fadeInRight delay-1s" />
             <div class="EasterEgg">Any application that can be written in JavaScript, will eventually be written in JavaScript.</div>
             <icon-list />
           </div>
