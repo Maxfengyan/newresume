@@ -1,0 +1,265 @@
+[
+  {
+    "id": 1,
+    "name": "vue3-element-template-vite",
+    "url": "https://gitee.com/Maxfengyan/vue3-admin-template-vite",
+    "content": [
+      {
+        "icon": "",
+        "title": "vue3-element后台管理系统模板: ",
+        "type": 0,
+        "text": "自己搭建的vue3-vite后台管理系统，功能齐全、组件解耦清晰、权限灵活配置、即拿即用"
+      },
+      {
+        "icon": "browser",
+        "title": "技术栈: ",
+        "type": 0,
+        "text": "vue3全家桶/vite/element-plus/js-cookie/axios/svg-icon等"
+      },
+      {
+        "icon": "desctop",
+        "title": "演示地址: ",
+        "type": 1,
+        "text": "https://maxfengyan.gitee.io/vue3-admin-template-vite/#/login"
+      },
+
+      {
+        "icon": "award",
+        "title": "收获: ",
+        "type": 0,
+        "text": "依靠此模板框架承接公司所有后台管理系统，开发效率提高、使用体验增强。自己对于vue掌握更加纯熟"
+      },
+      {
+        "icon": "coffee",
+        "title": "思考: ",
+        "type": 0,
+        "text": "已满足日常开发，考虑丰富组件以及Typescript+jsx"
+      }
+    ]
+  },
+  {
+    "id": 2,
+    "name": "visual-drag",
+    "url": "https://gitee.com/Maxfengyan/visual-drag",
+    "content": [
+      {
+        "icon": "",
+        "title": "可视化编辑生成html: ",
+        "type": 0,
+        "text": "一款可视化托拉拽生成html的vue操作组件，通过可视化页面小组件，实现编排生成html页面的功能"
+      },
+      {
+        "icon": "browser",
+        "title": "技术栈: ",
+        "type": 0,
+        "text": "vue3/canvas/element-plus"
+      },
+      {
+        "icon": "desctop",
+        "title": "演示地址: ",
+        "type": 1,
+        "text": "https://maxfengyan.gitee.io/visual-drag/index.html"
+      },
+
+      {
+        "icon": "award",
+        "title": "收获: ",
+        "type": 0,
+        "text": "强化HTML5 draggable的API学习，以及各种DOM事件的操作"
+      },
+      {
+        "icon": "coffee",
+        "title": "思考: ",
+        "type": 0,
+        "text": "丰富功能"
+      }
+    ]
+  },
+  {
+    "id": 7,
+    "name": "vue3Jsxresume",
+    "url": "https://gitee.com/Maxfengyan/newresume",
+    "content": [
+      {
+        "icon": "",
+        "title": "web端简历:",
+        "type": 0,
+        "text": " 响应式与自适应布局pc端和移动端、代码逻辑清晰、数据抽离、组件高度解耦。具备一键换肤夜间模式、回到顶部、浏览进度条、pdf自适应打印等功能"
+      },
+      {
+        "icon": "browser",
+        "title": "技术栈: ",
+        "type": 0,
+        "text": " vue3/vite/jsx/sass/axios"
+      },
+      {
+        "icon": "desctop",
+        "title": "演示地址: ",
+        "type": 1,
+        "text": "https://maxfengyan.gitee.io/newresume/"
+      },
+      {
+        "icon": "award",
+        "title": "收获: ",
+        "type": 0,
+        "text": "练习了vue3、Composition API、jsx语法、sass语法、以及多端响应式与自适应布局"
+      }
+    ]
+  },
+  {
+    "id": 3,
+    "name": "aconsole",
+    "url": "https://gitee.com/Maxfengyan/m-console",
+    "content": [
+      {
+        "icon": "",
+        "title": "机顶盒端调试输出插件: ",
+        "type": 0,
+        "text": "一款在机顶盒端输出调试信息的js小巧插件，功能齐全方便扩展"
+      },
+      {
+        "icon": "browser",
+        "title": "技术栈: ",
+        "type": 0,
+        "text": "原生js/webpack/es6"
+      },
+      {
+        "icon": "desctop",
+        "title": "npm插件地址: ",
+        "type": 1,
+        "text": "https://www.npmjs.com/package/aconsole"
+      },
+      {
+        "icon": "award",
+        "title": "收获: ",
+        "type": 0,
+        "text": "IPTV机顶盒无法调试输出，插件输出调试信息提升开发效率"
+      }
+    ]
+  },
+  {
+    "id": 4,
+    "name": "LemonTodo",
+    "url": "https://gitee.com/Maxfengyan/pc-todolist",
+    "content": [
+      {
+        "icon": "",
+        "title": "LemonTodo: ",
+        "type": 0,
+        "text": "一款桌面端 TODOllist，记录每天要干啥，使用方便简单、随时记录、增删改、本地永久存储"
+      },
+      {
+        "icon": "browser",
+        "title": "技术栈: ",
+        "type": 0,
+        "text": "electron/vue3/vite"
+      },
+      {
+        "icon": "download2",
+        "title": "下载试用: ",
+        "type": 1,
+        "text": "https://gitee.com/Maxfengyan/pc-todolist/attach_files/792533/download/lemontodo_setup_0.0.1.exe"
+      },
+      {
+        "icon": "award",
+        "title": "收获: ",
+        "type": 0,
+        "text": "electron与vue的结合，开发桌面端应用"
+      }
+    ]
+  },
+  {
+    "id": 5,
+    "name": "electronexcel",
+    "url": "https://gitee.com/Maxfengyan/electronexcel",
+    "content": [
+      {
+        "icon": "",
+        "title": "electronexcel: ",
+        "type": 0,
+        "text": "一款桌面端多个excel文件比对数据汇总处理的应用。"
+      },
+      {
+        "icon": "browser",
+        "title": "技术栈: ",
+        "type": 0,
+        "text": "electron/vue/exceljs"
+      },
+      {
+        "icon": "download2",
+        "title": "下载试用: ",
+        "type": 1,
+        "text": "https://gitee.com/Maxfengyan/electronexcel/raw/master/download/win-unpacked.zip"
+      },
+      {
+        "icon": "award",
+        "title": "收获: ",
+        "type": 0,
+        "text": "爱情(提升女友工作效率，减少复制粘贴及比对excel数据时间)"
+      }
+    ]
+  },
+  {
+    "id": 7,
+    "name": "vue3jingdong",
+    "url": "https://gitee.com/Maxfengyan/vue3study",
+    "content": [
+      {
+        "icon": "",
+        "title": "vue3jingdong: ",
+        "type": 0,
+        "text": "仿京东到家app UI用vue3全家桶开发h5页面"
+      },
+      {
+        "icon": "browser",
+        "title": "技术栈: ",
+        "type": 0,
+        "text": "vue3全家桶/jsx/mitt/js-cookie/axios/vue-cli等"
+      },
+      {
+        "icon": "browser",
+        "title": "演示地址(移动端或pc端控制台移动端调试模式)预览: ",
+        "type": 1,
+        "text": "http://maxfengyan.gitee.io/vue3study/#/"
+      },
+
+      {
+        "icon": "award",
+        "title": "收获: ",
+        "type": 0,
+        "text": "练习vue3、Composition API、jsx、sass、购物车逻辑"
+      },
+      {
+        "icon": "coffee",
+        "title": "思考: ",
+        "type": 0,
+        "text": "目前只完成首页、购物车功能，考虑继续学习完善"
+      }
+    ]
+  },
+  {
+    "id": 6,
+    "name": "video",
+    "url": "",
+    "content": [
+      {
+        "icon": "",
+        "title": "video付费项目: ",
+        "type": 0,
+        "text": "一款短视频播放的机顶盒端APK应用"
+      },
+      {
+        "icon": "browser",
+        "title": "技术栈: ",
+        "type": 0,
+        "text": "Hbuilder/webpack/js/xgplayer/polyfill"
+      },
+      {
+        "icon": "award",
+        "title": "收获: ",
+        "type": 0,
+        "text": "对视频TS流文件处理以及html5 plus API掌握"
+      }
+    ]
+  }
+]

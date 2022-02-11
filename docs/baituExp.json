@@ -1,0 +1,325 @@
+{
+  "id": "1",
+  "code": "baitu",
+  "componey": "北京百途新媒体技术",
+  "duty": [
+    {
+      "name": "前端开发",
+      "sup": "组长",
+      "tip": "5人前端团队"
+    },
+    {
+      "name": "Node.js后端开发"
+    }
+  ],
+  "time": "2018.9~至今",
+  "experience": [
+    {
+      "id": 1,
+      "name": "IPTV广电运营支撑系统",
+      "code": "boss",
+      "content": [
+        {
+          "icon": "",
+          "title": "IPTV广电运营支撑系统: ",
+          "type": 0,
+          "text": "服务于江苏、辽宁、安徽省台广电的融合用户平台，集IPTV用户管控系统、增值业务系统、账务系统、数据监控多系统组合的后台管理系统"
+        },
+        {
+          "icon": "browser",
+          "title": "技术栈: ",
+          "type": 0,
+          "text": "vue全家桶/element-ui/excelJs/Echarts/Node.js等"
+        },
+        {
+          "icon": "desctop",
+          "title": "演示地址: ",
+          "type": 1,
+          "text": "https://maxfengyan.gitee.io/boss-login/#/"
+        },
+        {
+          "icon": "user1",
+          "title": "本人负责: ",
+          "type": 0,
+          "text": "整个系统的前端架构以及代码开发"
+        },
+        {
+          "icon": "flash",
+          "title": "项目亮点: ",
+          "type": 0,
+          "text": "多系统统一入口及跳转验权、用户权限+动态路由协作、复杂表单数据处理等"
+        }
+      ]
+    },
+    {
+      "id": "2",
+      "name": "epg智能编排管理系统",
+      "code": "epgms",
+      "duty": "前端开发",
+      "content": [
+        {
+          "icon": "",
+          "title": "epg智能编排管理系统: ",
+          "type": 0,
+          "text": "服务于江苏、辽宁、浙江省台广电的epg编排系统，具有可视化编排布局EPG页面、静态数据生成审核下发、栏目节目智能编排上下线等功能"
+        },
+        {
+          "icon": "browser",
+          "title": "技术栈: ",
+          "type": 0,
+          "text": "vue3/vite/原生js/canvas"
+        },
+        {
+          "icon": "desctop",
+          "title": "部分核心模块演示地址: ",
+          "type": 1,
+          "text": "https://maxfengyan.gitee.io/visual-drag/index.html"
+        },
+        {
+          "icon": "user1",
+          "title": "本人负责: ",
+          "type": 0,
+          "text": "系统的前端架构以及代码开发"
+        },
+        {
+          "icon": "flash",
+          "title": "项目亮点: ",
+          "type": 0,
+          "text": "可视化托拉拽、数据编排生成、websocket通信等"
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "name": "epg活动营销系统",
+      "code": "cams",
+      "content": [
+        {
+          "icon": "",
+          "title": "epg活动营销系统: ",
+          "type": 0,
+          "text": "服务于山东海看广电的营销系统，负责配置EPG端营销活动：答题、抽奖、签到、大转盘等多种配置创建模式"
+        },
+        {
+          "icon": "browser",
+          "title": "技术栈: ",
+          "type": 0,
+          "text": "jsp/原生js/canvas"
+        },
+        {
+          "icon": "user1",
+          "title": "本人负责: ",
+          "type": 0,
+          "text": "系统的前端架构以及代码开发"
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "name": "IPTV端epg页面",
+      "code": "epg",
+      "content": [
+        {
+          "icon": "",
+          "title": "IPTV端epg页面: ",
+          "type": 0,
+          "text": "服务于江苏、辽宁广电IPTV盒子端的智能瀑布流页面，高性能加载、灵活可扩展、功能丰富、框架开发便捷"
+        },
+        {
+          "icon": "browser",
+          "title": "技术栈: ",
+          "type": 0,
+          "text": "原生js/canvas/gulp/polyfill/babel/koa/"
+        },
+
+        {
+          "icon": "user1",
+          "title": "本人负责: ",
+          "type": 0,
+          "text": "项目整体架构以及代码开发"
+        },
+        {
+          "icon": "flash",
+          "title": "项目亮点: ",
+          "type": 0,
+          "text": "gulp代码打包、开发热加载、Node.js接口代理模拟、最大化兼容不同机顶盒浏览器版本"
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "name": "媒资管理系统",
+      "code": "ma",
+      "content": [
+        {
+          "icon": "",
+          "title": "媒资管理系统: ",
+          "type": 0,
+          "text": "服务于浙江广电的媒资管理系统，负责点播直播节目的编排、审核上下线、上下游节目透传以及工单处理等功能"
+        },
+        {
+          "icon": "browser",
+          "title": "技术栈: ",
+          "type": 0,
+          "text": "vue全家桶/element-ui/Node.js等"
+        },
+        {
+          "icon": "user1",
+          "title": "本人负责: ",
+          "type": 0,
+          "text": "前端代码开发"
+        },
+        {
+          "icon": "flash",
+          "title": "项目亮点: ",
+          "type": 0,
+          "text": "m3u8视频相关、无限树形控件相关"
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "name": "用户采集系统",
+      "code": "ugms",
+      "content": [
+        {
+          "icon": "",
+          "title": "用户采集系统: ",
+          "type": 0,
+          "text": "服务辽宁电信IPTV用户EPG端观看、购买、收藏接口"
+        },
+        {
+          "icon": "browser",
+          "title": "技术栈: ",
+          "type": 0,
+          "text": "nodejs/express/pm2/redis/mongodb/log4j"
+        },
+
+        {
+          "icon": "user1",
+          "title": "本人负责: ",
+          "type": 0,
+          "text": "整个项目开发"
+        }
+      ]
+    },
+    {
+      "id": 7,
+      "name": "3A鉴权系统",
+      "code": "AAA",
+      "content": [
+        {
+          "icon": "",
+          "title": "3A鉴权系统: ",
+          "type": 0,
+          "text": "服务于江苏广电的高并发接口系统，用于用户开机自采、鉴权、失效等信息处理"
+        },
+        {
+          "icon": "browser",
+          "title": "技术栈: ",
+          "type": 0,
+          "text": "nodejs/fastify/pm2/mongodb/codis/winston"
+        },
+        {
+          "icon": "user1",
+          "title": "本人负责: ",
+          "type": 0,
+          "text": "项目初始架构以及后续部分开发"
+        }
+      ]
+    },
+    {
+      "id": 8,
+      "name": "epg入口管理系统",
+      "code": "epgManager",
+      "content": [
+        {
+          "icon": "",
+          "title": "epg入口管理系统: ",
+          "type": 0,
+          "text": "服务于公司内部，管理所有机顶盒入口地址"
+        },
+        {
+          "icon": "browser",
+          "title": "技术栈: ",
+          "type": 0,
+          "text": "nodejs/nestJs/mongodb/pm2/ts"
+        },
+        {
+          "icon": "user1",
+          "title": "本人负责: ",
+          "type": 0,
+          "text": "整个项目的开发"
+        },
+        {
+          "icon": "flash",
+          "title": "项目亮点: ",
+          "type": 0,
+          "text": "便于切换访问环境以及功能调试"
+        }
+      ]
+    },
+    {
+      "id": 9,
+      "name": "超级播控系统",
+      "code": "superVideo",
+      "content": [
+        {
+          "icon": "",
+          "title": "超级播控系统: ",
+          "type": 0,
+          "text": "服务于辽宁广电的超大屏展示系统，主要展示实时用户开户数据、订购趋势、开机数量等数据"
+        },
+        {
+          "icon": "browser",
+          "title": "技术栈: ",
+          "type": 0,
+          "text": "Echarts/原生js"
+        },
+        {
+          "icon": "user1",
+          "title": "本人负责: ",
+          "type": 0,
+          "text": "前端代码开发"
+        },
+        {
+          "icon": "flash",
+          "title": "项目亮点: ",
+          "type": 0,
+          "text": "酷炫的Echarts"
+        }
+      ]
+    },
+    {
+      "id": 10,
+      "name": "文件管理系统",
+      "code": "fileManager",
+      "content": [
+        {
+          "icon": "",
+          "title": "文件管理系统: ",
+          "type": 0,
+          "text": "zipUpload:产品经理通过系统上传原型，生成静态资源url访问。excelReview:上传excel，程序解析生成html页面"
+        },
+        {
+          "icon": "browser",
+          "title": "技术栈: ",
+          "type": 0,
+          "text": "nodejs/nestJs/adm-zip/excelJs"
+        },
+        {
+          "icon": "user1",
+          "title": "本人负责: ",
+          "type": 0,
+          "text": "整个项目的开发"
+        },
+        {
+          "icon": "flash",
+          "title": "项目亮点: ",
+          "type": 0,
+          "text": "解决了每次产品经理一修改原型就要被动接收一个完整的很大的压缩包的难题"
+        }
+      ]
+    }
+  ]
+}
