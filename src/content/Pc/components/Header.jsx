@@ -1,4 +1,4 @@
-import { defineComponent, reactive, ref } from "vue";
+import { defineComponent, ref } from "vue";
 import HeaderInfo from "@/content/public/headerInfo.js";
 import style from "@/style/pc/module/header.module.scss";
 import avatar from "@/assets/avatar.png";
@@ -23,7 +23,7 @@ const Header = defineComponent({
           <div class={style["header-link"]}>
             <a class={style.webResume} href={state.resume}>
               <van-icon name="down" />
-              建议PC端点击此链接或移动端扫描右侧二维码查看web端简历
+              强烈建议PC端点击此链接或移动端扫描二维码查看web简历
             </a>
             <span>
               <svg-icon name="GitHub" />
@@ -41,7 +41,7 @@ const Header = defineComponent({
               <svg-icon name="mail" />
               {state.email}
             </span>
-            <span>
+            <span class={style.wechat}>
               <svg-icon name="wechat" />
               {state.wechat}
             </span>

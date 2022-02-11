@@ -54,15 +54,15 @@
 
 #### 数据渲染模式
 
-改版后简历中所有数据都为 json 文件存放 public 中用axios进行请求，数据与代码分离，便于维护。(后期考虑开发Node.js程序进行文件管理)
+改版后简历中所有数据都为 json 文件存放 public 中用 axios 进行请求，数据与代码分离，便于维护。(后期考虑开发 Node.js 程序进行文件管理)
 
-json主要分为以下几块：
+json 主要分为以下几块：
 
-* 1.**exp.json**：存放公司code数组，code为新建公司json文件名称，例如 [ "baidu", "alibaba" ]，新加公司时创建baidu.json/alibaba.json,接口自动遍历json数据并请求所有公司json数据合并为数据展示在Epx.jsx组件中，代码详见**src/content/public/Exp**文件夹下。
-* 2.info.json：存放个人信息json
-* 3.me.json：存放自我介绍信息
-* 4.project.json：存放个人项目信息
-* 5.存放个人掌握技能相关信息
+- 1.**exp.json**：存放公司 code 数组，code 为新建公司 json 文件名称，例如 [ "baidu", "alibaba" ]，新加公司时创建 baidu.json/alibaba.json,接口自动遍历 json 数据并请求所有公司 json 数据合并为数据展示在 Epx.jsx 组件中，代码详见**src/content/public/Exp**文件夹下。
+- 2.info.json：存放个人信息 json
+- 3.me.json：存放自我介绍信息
+- 4.project.json：存放个人项目信息
+- 5.存放个人掌握技能相关信息
 
 #### &v1.2 2020-02-07 改版优化
 
@@ -76,3 +76,4 @@ json主要分为以下几块：
 #### 未解决问题
 
 - [ ] 加入新 svg 图标时无法实时热更新
+- [ ] 初始加载动画效果卡顿

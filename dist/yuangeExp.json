@@ -1,0 +1,75 @@
+{
+  "id": "2",
+  "code": "yuange",
+  "componey": "沈阳元格信息技术",
+  "time": "2017.7 ~ 2018.8",
+  "duty": [
+    {
+      "name": "前端开发"
+    }
+  ],
+  "experience": [
+    {
+      "id": 1,
+      "name": "PC端项目",
+      "code": "pcproject",
+      "content": [
+        {
+          "icon": "",
+          "title": "PC端项目: ",
+          "type": 0,
+          "text": "重庆电力研究所电力系统、大连海关内部系统、驾校管理系统、辽台都市惠商城系统等"
+        },
+        {
+          "icon": "browser",
+          "title": "技术栈: ",
+          "type": 0,
+          "text": "jQuery/Angular/layui/mui等"
+        },
+        {
+          "icon": "user1",
+          "title": "本人负责: ",
+          "type": 0,
+          "text": "前端代码开发"
+        },
+        {
+          "icon": "flash",
+          "title": "项目亮点: ",
+          "type": 0,
+          "text": "外包项目，锻炼人"
+        }
+      ]
+    },
+    {
+      "id": 1,
+      "name": "移动端项目",
+      "code": "mobileproject",
+      "content": [
+        {
+          "icon": "",
+          "title": "移动端项目: ",
+          "type": 0,
+          "text": "微信小程序开发(已上线：爱估回收、环卫士、RSLab等)，混合安卓端开发"
+        },
+        {
+          "icon": "browser",
+          "title": "技术栈: ",
+          "type": 0,
+          "text": "mui"
+        },
+        {
+          "icon": "user1",
+          "title": "本人负责: ",
+          "type": 0,
+          "text": "前端代码开发"
+        },
+        {
+          "icon": "flash",
+          "title": "项目亮点: ",
+          "type": 0,
+          "text": "外包项目，锻炼人"
+        }
+      ]
+    }
+  ]
+}
