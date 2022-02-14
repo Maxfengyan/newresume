@@ -23,7 +23,7 @@ const Header = defineComponent({
           <div class={style["header-link"]}>
             <a class={style.webResume} href={state.resume}>
               <van-icon name="down" />
-              强烈建议PC端点击此链接或移动端扫描二维码查看web简历
+              强烈建议PC端点击此链接或移动端扫描二维码查看我的web简历
             </a>
             <span>
               <svg-icon name="GitHub" />
